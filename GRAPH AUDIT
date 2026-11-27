@@ -1,0 +1,2128 @@
+SAYLO INTEGRATION GRAPH AUDIT
+Дата: 2026-11-27 06:29:49
+Корень: C:\Saylo
+Режим: READ ONLY
+Исходных файлов: 99
+JS/TS файлов: 90
+
+==============================================================================
+1. IMPORT / EXPORT
+==============================================================================
+[electron\main.js:3] const path = require('node:path')
+[electron\main.js:5] const RuntimeModule = require('../src/core/SayloRuntime')
+[src\audio\audioRecorder.js:7] export class AudioRecorder {
+[src\core\exercise\ExerciseEngine.js:1] const fs = require('node:fs')
+[src\core\exercise\ExerciseEngine.js:2] const path = require('node:path')
+[src\core\knowledge\KnowledgeBase.js:1] const fs = require('node:fs')
+[src\core\knowledge\KnowledgeBase.js:2] const path = require('node:path')
+[src\core\knowledge\KnowledgeBase.js:3] const crypto = require('node:crypto')
+[src\core\media\MediaManager.js:1] const fs = require('node:fs')
+[src\core\media\MediaManager.js:2] const path = require('node:path')
+[src\core\phonetics\PhoneticDataLoader.js:1] const fs = require('node:fs')
+[src\core\phonetics\PhoneticDataLoader.js:2] const path = require('node:path')
+[src\core\phonetics\PronunciationDictionary.js:1] const fs = require('node:fs')
+[src\core\phonetics\PronunciationDictionary.js:2] const path = require('node:path')
+[src\core\phonetics\RussianMorphemeDictionary.js:1] const fs = require('node:fs')
+[src\core\phonetics\RussianMorphemeDictionary.js:2] const path = require('node:path')
+[src\core\phonetics\RussianWordBank.js:1] const fs = require('fs')
+[src\core\phonetics\RussianWordBank.js:2] const path = require('path')
+[src\core\profile\ChildSpeechProfileStore.js:1] const fs = require('node:fs')
+[src\core\profile\ChildSpeechProfileStore.js:2] const path = require('node:path')
+[src\core\profile\ChildSpeechProfileStore.js:3] const crypto = require('node:crypto')
+[src\core\progress\ProgressStore.js:1] const fs = require('node:fs')
+[src\core\progress\ProgressStore.js:2] const path = require('node:path')
+[src\core\progress\ProgressStore.js:3] const crypto = require('node:crypto')
+[src\core\SayloRuntime.js:2] const path = require('node:path')
+[src\renderer\app.js:1] import { AudioRecorder } from '../audio/audioRecorder.js'
+[src\renderer\app.js:2] import { GameEngine } from './game/game.bundle.js'
+[src\renderer\game\adapters\AudioAdapter.js:11] export {};
+[src\renderer\game\adapters\LessonAdapter.js:11] export {};
+[src\renderer\game\adapters\ProfileAdapter.js:11] export {};
+[src\renderer\game\assets\AssetManager.js:2] import { Assets } from 'pixi.js'
+[src\renderer\game\assets\AssetManager.js:3] import { ASSET_MANIFEST } from './manifest.js'
+[src\renderer\game\assets\AssetManager.js:19] export class AssetManager {
+[src\renderer\game\assets\manifest.js:8] export const ASSET_MANIFEST = Object.freeze({
+[src\renderer\game\core\EngineConfig.js:7] export const EngineConfig = Object.freeze({
+[src\renderer\game\core\EngineConfig.js:70] export function createEngineConfig(overrides = {}) {
+[src\renderer\game\core\EventBus.js:7] export class EventBus {
+[src\renderer\game\core\GameEngine.js:2] import 'pixi.js/unsafe-eval'
+[src\renderer\game\core\GameEngine.js:4] import { Application } from 'pixi.js'
+[src\renderer\game\core\GameEngine.js:6] import { createEngineConfig } from './EngineConfig.js'
+[src\renderer\game\core\GameEngine.js:7] import { EventBus } from './EventBus.js'
+[src\renderer\game\core\GameEngine.js:8] import { GameState } from './GameState.js'
+[src\renderer\game\core\GameEngine.js:9] import { GameLoop } from './GameLoop.js'
+[src\renderer\game\core\GameEngine.js:11] import { World } from '../world/World.js'
+[src\renderer\game\core\GameEngine.js:12] import { Camera } from '../world/Camera.js'
+[src\renderer\game\core\GameEngine.js:14] import { AssetManager } from '../assets/AssetManager.js'
+[src\renderer\game\core\GameEngine.js:16] import { AnimationSystem } from '../systems/AnimationSystem.js'
+[src\renderer\game\core\GameEngine.js:17] import { RenderingSystem } from '../systems/RenderingSystem.js'
+[src\renderer\game\core\GameEngine.js:18] import { HiveScene } from '../scenes/HiveScene.js'
+[src\renderer\game\core\GameEngine.js:26] export class GameEngine {
+[src\renderer\game\core\GameLoop.js:7] export class GameLoop {
+[src\renderer\game\core\GameState.js:7] export class GameState {
+[src\renderer\game\debug\DebugOverlay.js:11] export {};
+[src\renderer\game\debug\WorldInspector.js:11] export {};
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:1] import { Sprite } from 'pixi.js'
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:9] export class BeeAnimator {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:1] import { Container, Sprite } from 'pixi.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:3] import { Entity } from '../../Entity.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:4] import { BEE_CONFIG } from './BeeConfig.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:5] import { BeeAnimator } from './BeeAnimator.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:6] import { BeeStateMachine } from './BeeStateMachine.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:14] export class BeeCharacter extends Entity {
+[src\renderer\game\entities\characters\bee\BeeConfig.js:1] export const BEE_CONFIG = Object.freeze({
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:28] export class BeeStateMachine {
+[src\renderer\game\entities\Entity.js:9] export class Entity {
+[src\renderer\game\navigation\MovementController.js:21] export class MovementController {
+[src\renderer\game\navigation\NavigationGraph.js:7] export class NavigationGraph {
+[src\renderer\game\navigation\PathFinder.js:9] export class PathFinder {
+[src\renderer\game\navigation\Waypoints.js:8] export class Waypoints {
+[src\renderer\game\scenes\GardenScene.js:11] export {};
+[src\renderer\game\scenes\HiveScene.js:2] import { Container, Sprite } from 'pixi.js'
+[src\renderer\game\scenes\HiveScene.js:4] import { BeeCharacter } from '../entities/characters/bee/BeeCharacter.js'
+[src\renderer\game\scenes\HiveScene.js:12] export class HiveScene {
+[src\renderer\game\scenes\HomeScene.js:11] export {};
+[src\renderer\game\scenes\LessonScene.js:11] export {};
+[src\renderer\game\scenes\LibraryScene.js:11] export {};
+[src\renderer\game\scenes\SceneManager.js:11] export {};
+[src\renderer\game\systems\AccessibilitySystem.js:58] export class AccessibilitySystem {
+[src\renderer\game\systems\AnimationSystem.js:10] export class AnimationSystem {
+[src\renderer\game\systems\AudioSystem.js:10] export class AudioSystem {
+[src\renderer\game\systems\DialogueSystem.js:9] export class DialogueSystem {
+[src\renderer\game\systems\GameFlowSystem.js:9] export class GameFlowSystem {
+[src\renderer\game\systems\InputSystem.js:9] export class InputSystem {
+[src\renderer\game\systems\InteractionSystem.js:9] export class InteractionSystem {
+[src\renderer\game\systems\PerformanceSystem.js:33] export class PerformanceSystem {
+[src\renderer\game\systems\PhysicsSystem.js:9] export class PhysicsSystem {
+[src\renderer\game\systems\RenderingSystem.js:10] export class RenderingSystem {
+[src\renderer\game\systems\SaveSystem.js:12] export class SaveSystem {
+[src\renderer\game\ui\DialogWindow.js:2] import { Container, Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\DialogWindow.js:43] export class DialogWindow {
+[src\renderer\game\ui\GameHUD.js:2] import { Container, Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\GameHUD.js:37] export class GameHUD {
+[src\renderer\game\ui\Inventory.js:2] import { Container, Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\Inventory.js:37] export class Inventory {
+[src\renderer\game\ui\UIComponent.js:2] import { Container } from 'pixi.js'
+[src\renderer\game\ui\UIComponent.js:4] export class UIComponent {
+[src\renderer\game\ui\UIManager.js:2] import { Container } from 'pixi.js'
+[src\renderer\game\ui\UIManager.js:18] export class UIManager {
+[src\renderer\game\ui\UITheme.js:235] export const UITheme = deepFreeze({
+[src\renderer\game\ui\UITheme.js:248] export function getThemeColor(name) {
+[src\renderer\game\ui\UITheme.js:260] export function getButtonStyle(variant = 'primary') {
+[src\renderer\game\ui\UITheme.js:272] export function getButtonSize(size = 'medium') {
+[src\renderer\game\ui\UITheme.js:288] export function getTextStyle({
+[src\renderer\game\ui\UITheme.js:341] export function getPanelStyle(overrides = {}) {
+[src\renderer\game\ui\UITheme.js:354] export function getAnimationDuration(speed = 'normal') {
+[src\renderer\game\ui\UITheme.js:366] export function getShadowStyle(level = 'soft') {
+[src\renderer\game\ui\UITheme.js:378] export function getThemeSnapshot() {
+[src\renderer\game\ui\widgets\Button.js:2] import { Container, Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\widgets\Button.js:4] import { UIComponent } from '../UIComponent.js'
+[src\renderer\game\ui\widgets\Button.js:5] import {
+[src\renderer\game\ui\widgets\Button.js:11] export class Button extends UIComponent {
+[src\renderer\game\ui\widgets\Panel.js:2] import { Container, Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\widgets\Panel.js:3] import { UIComponent } from '../UIComponent.js'
+[src\renderer\game\ui\widgets\Panel.js:4] import { UITheme } from '../UITheme.js'
+[src\renderer\game\ui\widgets\Panel.js:65] export class Panel extends UIComponent {
+[src\renderer\game\ui\widgets\ProgressBar.js:2] import { Graphics, Text } from 'pixi.js'
+[src\renderer\game\ui\widgets\ProgressBar.js:4] import { UIComponent } from '../UIComponent.js'
+[src\renderer\game\ui\widgets\ProgressBar.js:5] import { UITheme } from '../UITheme.js'
+[src\renderer\game\ui\widgets\ProgressBar.js:7] export class ProgressBar extends UIComponent {
+[src\renderer\game\world\Camera.js:7] export class Camera {
+[src\renderer\game\world\CoordinateSystem.js:7] export class CoordinateSystem {
+[src\renderer\game\world\World.js:7] import { Container } from 'pixi.js'
+[src\renderer\game\world\World.js:9] export class World {
+[src\renderer\game\world\WorldMap.js:7] export class WorldMap {
+[tests\graphemePhonemeResolver.test.js:1] const test = require('node:test')
+[tests\graphemePhonemeResolver.test.js:2] const assert = require('node:assert/strict')
+[tests\progressEvaluator.test.js:1] const assert = require('node:assert/strict')
+[tests\progressStore.test.js:1] const assert = require('node:assert/strict')
+[tests\progressStore.test.js:2] const fs = require('node:fs')
+[tests\progressStore.test.js:3] const os = require('node:os')
+[tests\progressStore.test.js:4] const path = require('node:path')
+[tests\progressStoreV2.test.js:1] const fs = require('node:fs')
+[tests\progressStoreV2.test.js:2] const os = require('node:os')
+[tests\progressStoreV2.test.js:3] const path = require('node:path')
+[tests\progressStoreV2.test.js:4] const assert = require('node:assert/strict')
+[tests\progressTaskResult.test.js:1] const fs = require('node:fs')
+[tests\progressTaskResult.test.js:2] const os = require('node:os')
+[tests\progressTaskResult.test.js:3] const path = require('node:path')
+[tests\progressTaskResult.test.js:4] const assert = require('node:assert/strict')
+[tests\runGraphemePhonemeCases.js:1] const fs = require('node:fs')
+[tests\runGraphemePhonemeCases.js:2] const path = require('node:path')
+[tests\russianAlphabetEngine.test.js:1] const path = require('node:path')
+[tests\russianAlphabetEngine.test.js:2] const assert = require('node:assert/strict')
+[tests\russianAlphabetEngine.test.js:3] const test = require('node:test')
+[tests\sessionProgressEvaluation.test.js:1] const fs = require('node:fs')
+[tests\sessionProgressEvaluation.test.js:2] const os = require('node:os')
+[tests\sessionProgressEvaluation.test.js:3] const path = require('node:path')
+[tests\sessionProgressEvaluation.test.js:4] const assert = require('node:assert/strict')
+[tests\sessionStageIntegration.test.js:1] const fs = require('node:fs')
+[tests\sessionStageIntegration.test.js:2] const os = require('node:os')
+[tests\sessionStageIntegration.test.js:3] const path = require('node:path')
+[tests\sessionStageIntegration.test.js:4] const assert = require('node:assert/strict')
+[tests\stageCompletion.test.js:1] const fs = require('node:fs')
+[tests\stageCompletion.test.js:2] const os = require('node:os')
+[tests\stageCompletion.test.js:3] const path = require('node:path')
+[tests\stageCompletion.test.js:4] const assert = require('node:assert/strict')
+Всего совпадений: 156
+
+==============================================================================
+2. СОЗДАНИЕ ЭКЗЕМПЛЯРОВ ОСНОВНЫХ КЛАССОВ
+==============================================================================
+
+--- GameEngine : 1 ---
+[src\renderer\app.js:1204] gameEngine = new GameEngine()
+
+--- GameLoop : 1 ---
+[src\renderer\game\core\GameEngine.js:188] this.gameLoop = new GameLoop({
+
+--- BeeCharacter : 1 ---
+[src\renderer\game\scenes\HiveScene.js:132] this.beeCharacter = new BeeCharacter({
+
+--- BeeAnimator : 1 ---
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:116] ? new BeeAnimator({
+
+--- BeeStateMachine : 1 ---
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:125] ? new BeeStateMachine({ character: this })
+
+--- HiveScene : 1 ---
+[src\renderer\game\core\GameEngine.js:175] this.scene = new HiveScene(
+
+--- SceneManager : 0 ---
+
+--- UIManager : 0 ---
+
+--- GameHUD : 0 ---
+
+--- DialogWindow : 0 ---
+
+--- Inventory : 0 ---
+
+--- AnimationSystem : 1 ---
+[src\renderer\game\core\GameEngine.js:122] this.animationSystem = new AnimationSystem({
+
+--- AudioSystem : 0 ---
+
+--- DialogueSystem : 0 ---
+
+--- GameFlowSystem : 0 ---
+
+--- InputSystem : 0 ---
+
+--- InteractionSystem : 0 ---
+
+--- PhysicsSystem : 0 ---
+
+--- RenderingSystem : 1 ---
+[src\renderer\game\core\GameEngine.js:160] this.renderingSystem = new RenderingSystem({
+
+--- SaveSystem : 0 ---
+
+--- World : 1 ---
+[src\renderer\game\core\GameEngine.js:142] this.world = new World({
+
+--- Camera : 1 ---
+[src\renderer\game\core\GameEngine.js:151] this.camera = new Camera({
+
+--- SayloRuntime : 1 ---
+[electron\main.js:38] const sayloRuntime = new SayloRuntime()
+
+--- ExerciseEngine : 3 ---
+[src\core\exercise\PersonalizedTrainingEngine.js:11] new ExerciseEngine(projectRoot)
+[src\core\session\SessionController.js:13] new ExerciseEngine(projectRoot)
+[tests\russianAlphabetEngine.test.js:10] const engine = new ExerciseEngine(projectRoot)
+
+--- PersonalizedTrainingEngine : 1 ---
+[src\core\SayloRuntime.js:41] this.trainingEngine = new PersonalizedTrainingEngine(
+
+--- ProgressStore : 12 ---
+[src\core\SayloRuntime.js:54] this.progressStore = new ProgressStore(projectRoot)
+[src\core\session\SessionController.js:16] new ProgressStore(projectRoot)
+[tests\progressStore.test.js:15] const store = new ProgressStore(tempRoot)
+[tests\progressStore.test.js:99] const restoredStore = new ProgressStore(tempRoot)
+[tests\progressStoreV2.test.js:17] const freshStore = new ProgressStore(freshRoot)
+[tests\progressStoreV2.test.js:28] const reloadStore = new ProgressStore(freshRoot)
+[tests\progressStoreV2.test.js:75] const migratedStore = new ProgressStore(oldRoot)
+[tests\progressStoreV2.test.js:87] const finalStore = new ProgressStore(oldRoot)
+[tests\progressTaskResult.test.js:13] const store = new ProgressStore(tempRoot)
+[tests\progressTaskResult.test.js:42] const reloadedStore = new ProgressStore(tempRoot)
+[tests\stageCompletion.test.js:15] const store = new ProgressStore(tempRoot)
+[tests\stageCompletion.test.js:151] const restoredStore = new ProgressStore(tempRoot)
+
+--- ProgressEvaluator : 3 ---
+[src\core\SayloRuntime.js:56] this.progressEvaluator = new ProgressEvaluator()
+[src\core\session\SessionController.js:19] new ProgressEvaluator()
+[tests\progressEvaluator.test.js:4] const evaluator = new ProgressEvaluator()
+
+--- SessionController : 4 ---
+[src\core\SayloRuntime.js:58] this.sessionController = new SessionController(
+[tests\sessionProgressEvaluation.test.js:31] const controller = new SessionController(tempRoot)
+[tests\sessionProgressEvaluation.test.js:59] const restoredController = new SessionController(tempRoot)
+[tests\sessionStageIntegration.test.js:26] const controller = new SessionController(tempDir)
+
+--- SoundWeaknessAnalyzer : 1 ---
+[src\core\SayloRuntime.js:67] this.weaknessAnalyzer = new SoundWeaknessAnalyzer()
+
+--- LessonAdapter : 0 ---
+
+--- ProfileAdapter : 0 ---
+
+--- AudioAdapter : 0 ---
+
+==============================================================================
+3. GAME ENGINE: UPDATE / INIT / SYSTEMS
+==============================================================================
+[electron\main.js:41] status: 'initializing'
+[electron\main.js:45] sayloRuntimeStatus = await sayloRuntime.initialize()
+[electron\main.js:48] '[Saylo] Runtime initialized:',
+[electron\main.js:53] status: 'initialization_error',
+[electron\main.js:58] '[Saylo] Runtime initialization failed:',
+[electron\main.js:126] sayloRuntimeStatus.status !== 'initialized'
+[electron\main.js:131] if (sayloRuntimeStatus.status !== 'initialized') {
+[src\core\exercise\ArticulationTrainingPlanner.js:35] positions: ['initial', 'medial', 'final']
+[src\core\exercise\ArticulationTrainingPlanner.js:143] unit.index === 0 ? 'initial' :
+[src\core\exercise\PersonalizedTrainingEngine.js:24] this.initialized = false
+[src\core\exercise\PersonalizedTrainingEngine.js:27] initialize() {
+[src\core\exercise\PersonalizedTrainingEngine.js:28] if (this.initialized) {
+[src\core\exercise\PersonalizedTrainingEngine.js:30] status: 'already_initialized'
+[src\core\exercise\PersonalizedTrainingEngine.js:37] const phoneticsStatus = this.phoneticsEngine.initialized
+[src\core\exercise\PersonalizedTrainingEngine.js:38] ? { status: 'already_initialized' }
+[src\core\exercise\PersonalizedTrainingEngine.js:39] : this.phoneticsEngine.initialize()
+[src\core\exercise\PersonalizedTrainingEngine.js:41] this.initialized = true
+[src\core\exercise\PersonalizedTrainingEngine.js:44] status: 'initialized',
+[src\core\exercise\PersonalizedTrainingEngine.js:54] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:59] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:73] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:78] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:229] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:238] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:247] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:256] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:266] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:277] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:289] this.ensureInitialized()
+[src\core\exercise\PersonalizedTrainingEngine.js:293] ensureInitialized() {
+[src\core\exercise\PersonalizedTrainingEngine.js:294] if (!this.initialized) {
+[src\core\exercise\PersonalizedTrainingEngine.js:296] 'Сначала вызовите PersonalizedTrainingEngine.initialize().'
+[src\core\knowledge\KnowledgeBase.js:64] this.initialized = false
+[src\core\knowledge\KnowledgeBase.js:68] // INITIALIZATION
+[src\core\knowledge\KnowledgeBase.js:71] initialize() {
+[src\core\knowledge\KnowledgeBase.js:72] if (this.initialized) {
+[src\core\knowledge\KnowledgeBase.js:74] status: 'already_initialized',
+[src\core\knowledge\KnowledgeBase.js:91] this.initialized = true
+[src\core\knowledge\KnowledgeBase.js:94] status: 'initialized',
+[src\core\knowledge\KnowledgeBase.js:194] ensureInitialized() {
+[src\core\knowledge\KnowledgeBase.js:195] if (!this.initialized || !this.data) {
+[src\core\knowledge\KnowledgeBase.js:197] 'Сначала вызовите KnowledgeBase.initialize().'
+[src\core\knowledge\KnowledgeBase.js:252] this.ensureInitialized()
+[src\core\knowledge\KnowledgeBase.js:760] recordUpdate(input = {}) {
+[src\core\knowledge\KnowledgeBase.js:793] this.ensureInitialized()
+[src\core\knowledge\KnowledgeBase.js:828] this.ensureInitialized()
+[src\core\knowledge\KnowledgeBase.js:840] this.ensureInitialized()
+[src\core\media\MediaManager.js:53] initialize() {
+[src\core\media\MediaManager.js:61] status: 'initialized',
+[src\core\phonetics\PhonemePositionAnalyzer.js:38] i === 0 ? 'initial' :
+[src\core\phonetics\PhonemePositionAnalyzer.js:78] initial: matches.filter(item => item.position === 'initial').length,
+[src\core\phonetics\RussianPhoneticsEngine.js:42] this.initialized = false
+[src\core\phonetics\RussianPhoneticsEngine.js:45] initialize() {
+[src\core\phonetics\RussianPhoneticsEngine.js:46] if (this.initialized) {
+[src\core\phonetics\RussianPhoneticsEngine.js:48] status: 'already_initialized'
+[src\core\phonetics\RussianPhoneticsEngine.js:57] this.initialized = true
+[src\core\phonetics\RussianPhoneticsEngine.js:60] status: 'initialized',
+[src\core\phonetics\RussianPhoneticsEngine.js:68] ensureInitialized() {
+[src\core\phonetics\RussianPhoneticsEngine.js:69] if (!this.initialized) {
+[src\core\phonetics\RussianPhoneticsEngine.js:71] 'Сначала вызовите RussianPhoneticsEngine.initialize().'
+[src\core\phonetics\RussianPhoneticsEngine.js:126] this.ensureInitialized()
+[src\core\phonetics\RussianPhoneticsEngine.js:252] this.ensureInitialized()
+[src\core\phonetics\RussianPhoneticsEngine.js:257] this.ensureInitialized()
+[src\core\phonetics\RussianPhoneticsEngine.js:266] this.ensureInitialized()
+[src\core\phonetics\RussianPhoneticsEngine.js:270] this.ensureInitialized()
+[src\core\phonetics\RussianPhoneticsEngine.js:275] this.ensureInitialized()
+[src\core\phonetics\RussianPhonotacticsEngine.js:14] this.specialInitialClusters = [
+[src\core\phonetics\RussianPhonotacticsEngine.js:20] this.initialClusterExceptions = [
+[src\core\phonetics\RussianPhonotacticsEngine.js:86] this.specialInitialClusters.includes(text) ||
+[src\core\phonetics\RussianPhonotacticsEngine.js:87] this.initialClusterExceptions.includes(text)
+[src\core\phonetics\SyllableStructureEngine.js:3] this.initialized = true
+[src\core\profile\ChildSpeechProfileStore.js:349] const initialLength = profile.targetSounds.length
+[src\core\profile\ChildSpeechProfileStore.js:355] if (profile.targetSounds.length === initialLength) {
+[src\core\progress\ProgressStore.js:236] responseDurationMs: Number.isFinite(input.responseDurationMs)
+[src\core\progress\SoundWeaknessAnalyzer.js:23] 'initial_position',
+[src\core\SayloRuntime.js:69] this.initialized = false
+[src\core\SayloRuntime.js:73] // INITIALIZATION
+[src\core\SayloRuntime.js:76] initialize() {
+[src\core\SayloRuntime.js:77] if (this.initialized) {
+[src\core\SayloRuntime.js:79] status: 'already_initialized'
+[src\core\SayloRuntime.js:83] const mediaStatus = this.mediaManager.initialize()
+[src\core\SayloRuntime.js:85] const knowledgeStatus = this.knowledgeBase.initialize()
+[src\core\SayloRuntime.js:87] const trainingStatus = this.trainingEngine.initialize()
+[src\core\SayloRuntime.js:91] this.initialized = true
+[src\core\SayloRuntime.js:94] status: 'initialized',
+[src\core\SayloRuntime.js:118] this.ensureInitialized()
+[src\core\SayloRuntime.js:140] this.ensureInitialized()
+[src\core\SayloRuntime.js:146] this.ensureInitialized()
+[src\core\SayloRuntime.js:152] this.ensureInitialized()
+[src\core\SayloRuntime.js:158] this.ensureInitialized()
+[src\core\SayloRuntime.js:164] this.ensureInitialized()
+[src\core\SayloRuntime.js:170] this.ensureInitialized()
+[src\core\SayloRuntime.js:176] this.ensureInitialized()
+[src\core\SayloRuntime.js:189] this.ensureInitialized()
+[src\core\SayloRuntime.js:195] this.ensureInitialized()
+[src\core\SayloRuntime.js:201] this.ensureInitialized()
+[src\core\SayloRuntime.js:210] this.ensureInitialized()
+[src\core\SayloRuntime.js:216] this.ensureInitialized()
+[src\core\SayloRuntime.js:229] this.ensureInitialized()
+[src\core\SayloRuntime.js:235] this.ensureInitialized()
+[src\core\SayloRuntime.js:241] this.ensureInitialized()
+[src\core\SayloRuntime.js:251] this.ensureInitialized()
+[src\core\SayloRuntime.js:260] this.ensureInitialized()
+[src\core\SayloRuntime.js:270] this.ensureInitialized()
+[src\core\SayloRuntime.js:276] this.ensureInitialized()
+[src\core\SayloRuntime.js:282] this.ensureInitialized()
+[src\core\SayloRuntime.js:288] this.ensureInitialized()
+[src\core\SayloRuntime.js:301] this.ensureInitialized()
+[src\core\SayloRuntime.js:314] this.ensureInitialized()
+[src\core\SayloRuntime.js:370] this.ensureInitialized()
+[src\core\SayloRuntime.js:376] this.ensureInitialized()
+[src\core\SayloRuntime.js:382] this.ensureInitialized()
+[src\core\SayloRuntime.js:388] this.ensureInitialized()
+[src\core\SayloRuntime.js:394] this.ensureInitialized()
+[src\core\SayloRuntime.js:400] this.ensureInitialized()
+[src\core\SayloRuntime.js:410] this.ensureInitialized()
+[src\core\SayloRuntime.js:427] this.ensureInitialized()
+[src\core\SayloRuntime.js:441] ensureInitialized() {
+[src\core\SayloRuntime.js:442] if (!this.initialized) {
+[src\core\SayloRuntime.js:444] 'Сначала вызовите SayloRuntime.initialize().'
+[src\core\session\SessionController.js:23] this.initialized = false
+[src\core\session\SessionController.js:27] // INITIALIZATION
+[src\core\session\SessionController.js:31] if (this.initialized) {
+[src\core\session\SessionController.js:42] this.initialized = true
+[src\core\session\SessionController.js:237] if (!this.initialized) {
+[src\renderer\app.js:143] if (gameEngine?.initialized) {
+[src\renderer\app.js:156] requestAnimationFrame(() => {
+[src\renderer\app.js:385] requestAnimationFrame(() => {
+[src\renderer\app.js:1188] console.log('Saylo UI initialized.')
+[src\renderer\app.js:1206] gameEngine.initialize()
+[src\renderer\app.js:1244] function initializeSplashScreen() {
+[src\renderer\app.js:1272] initializeSplashScreen()
+[src\renderer\game\assets\AssetManager.js:56] this.initialized = false
+[src\renderer\game\assets\AssetManager.js:63] initialize() {
+[src\renderer\game\assets\AssetManager.js:67] if (this.initialized) {
+[src\renderer\game\assets\AssetManager.js:85] const definitions = assetKeys.map(key => {
+[src\renderer\game\assets\AssetManager.js:107] definitions
+[src\renderer\game\assets\AssetManager.js:113] this.initialized = true
+[src\renderer\game\assets\AssetManager.js:133] this.initialized = false
+[src\renderer\game\assets\AssetManager.js:146] this.initialize()
+[src\renderer\game\assets\AssetManager.js:148] const definition = this.manifest.assets[assetKey]
+[src\renderer\game\assets\AssetManager.js:150] if (!definition) {
+[src\renderer\game\assets\AssetManager.js:165] .load(definition.alias)
+[src\renderer\game\assets\AssetManager.js:194] this.initialize()
+[src\renderer\game\assets\AssetManager.js:214] const definition = this.manifest.assets[key]
+[src\renderer\game\assets\AssetManager.js:216] cached[definition.alias] =
+[src\renderer\game\assets\AssetManager.js:218] this.assetsApi.get(definition.alias)
+[src\renderer\game\assets\AssetManager.js:239] const definition = this.manifest.assets[key]
+[src\renderer\game\assets\AssetManager.js:242] resources?.[definition.alias] ??
+[src\renderer\game\assets\AssetManager.js:243] this.assetsApi.get(definition.alias)
+[src\renderer\game\assets\AssetManager.js:326] initialized: this.initialized,
+[src\renderer\game\assets\AssetManager.js:385] this.initialized = false
+[src\renderer\game\core\GameEngine.js:45] this.initialized = false
+[src\renderer\game\core\GameEngine.js:46] this.appInitialized = false
+[src\renderer\game\core\GameEngine.js:47] this.initializing = false
+[src\renderer\game\core\GameEngine.js:48] this.initPromise = null
+[src\renderer\game\core\GameEngine.js:52] // INITIALIZATION
+[src\renderer\game\core\GameEngine.js:55] initialize() {
+[src\renderer\game\core\GameEngine.js:56] if (this.initialized) {
+[src\renderer\game\core\GameEngine.js:61] if (this.initPromise) {
+[src\renderer\game\core\GameEngine.js:62] return this.initPromise
+[src\renderer\game\core\GameEngine.js:65] this.initPromise = this.initializeInternal()
+[src\renderer\game\core\GameEngine.js:67] return this.initPromise.finally(() => {
+[src\renderer\game\core\GameEngine.js:68] this.initPromise = null
+[src\renderer\game\core\GameEngine.js:76] async initializeInternal() {
+[src\renderer\game\core\GameEngine.js:77] if (this.initializing) return false
+[src\renderer\game\core\GameEngine.js:79] this.initializing = true
+[src\renderer\game\core\GameEngine.js:85] this.initializing = false
+[src\renderer\game\core\GameEngine.js:98] await this.app.init({
+[src\renderer\game\core\GameEngine.js:112] this.appInitialized = true
+[src\renderer\game\core\GameEngine.js:134] this.assetManager.initialize()
+[src\renderer\game\core\GameEngine.js:142] this.world = new World({
+[src\renderer\game\core\GameEngine.js:184] await this.scene.initialize()
+[src\renderer\game\core\GameEngine.js:188] this.gameLoop = new GameLoop({
+[src\renderer\game\core\GameEngine.js:194] this.update(deltaTime, elapsedTime)
+[src\renderer\game\core\GameEngine.js:198] // 10. INITIAL STATE
+[src\renderer\game\core\GameEngine.js:200] this.gameState.update({
+[src\renderer\game\core\GameEngine.js:201] initialized: true,
+[src\renderer\game\core\GameEngine.js:208] this.initialized = true
+[src\renderer\game\core\GameEngine.js:209] this.initializing = false
+[src\renderer\game\core\GameEngine.js:214] this.eventBus.emit('engine:initialized', {
+[src\renderer\game\core\GameEngine.js:227] this.initializing = false
+[src\renderer\game\core\GameEngine.js:228] this.initialized = false
+[src\renderer\game\core\GameEngine.js:238] update(deltaTime, elapsedTime) {
+[src\renderer\game\core\GameEngine.js:239] if (!this.initialized && !this.initializing) return false
+[src\renderer\game\core\GameEngine.js:241] if (!Number.isFinite(deltaTime) || deltaTime < 0) {
+[src\renderer\game\core\GameEngine.js:245] this.animationSystem?.update(deltaTime)
+[src\renderer\game\core\GameEngine.js:246] this.world?.update(deltaTime, elapsedTime)
+[src\renderer\game\core\GameEngine.js:257] if (!this.initialized || !this.gameLoop) return false
+[src\renderer\game\core\GameEngine.js:262] this.gameState.update({
+[src\renderer\game\core\GameEngine.js:278] if (!this.initialized || !this.gameLoop) return false
+[src\renderer\game\core\GameEngine.js:285] this.gameState.update({
+[src\renderer\game\core\GameEngine.js:308] initialized: this.initialized,
+[src\renderer\game\core\GameEngine.js:412] this.appInitialized = false
+[src\renderer\game\core\GameEngine.js:413] this.initialized = false
+[src\renderer\game\core\GameEngine.js:426] !this.initialized
+[src\renderer\game\core\GameEngine.js:432] this.initializing = false
+[src\renderer\game\core\GameLoop.js:31] !Number.isFinite(this.fixedTimeStep) ||
+[src\renderer\game\core\GameLoop.js:40] !Number.isFinite(this.maxDeltaTime) ||
+[src\renderer\game\core\GameLoop.js:81] if (typeof requestAnimationFrame !== 'function') {
+[src\renderer\game\core\GameLoop.js:83] '[GameLoop] requestAnimationFrame недоступен.'
+[src\renderer\game\core\GameLoop.js:178] this.frameId = requestAnimationFrame(
+[src\renderer\game\core\GameLoop.js:230] this.onUpdate(
+[src\renderer\game\core\GameState.js:14] initialized: false,
+[src\renderer\game\core\GameState.js:89] update(values = {}) {
+[src\renderer\game\core\GameState.js:160] initialized: false,
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:15] initialPose = 'front_standing'
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:30] if (!textures || !textures[initialPose]) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:38] this.currentPose = initialPose
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:61] if (!Number.isFinite(duration) || duration <= 0) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:207] if (!Number.isFinite(scale) || scale <= 0) {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:26] const initialTexture = poseTextures.front_standing || texture
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:29] !initialTexture ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:30] !Number.isFinite(initialTexture.width) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:31] !Number.isFinite(initialTexture.height) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:32] initialTexture.width <= 0 ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:33] initialTexture.height <= 0
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:39] !Number.isFinite(worldWidth) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:40] !Number.isFinite(worldHeight) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:63] config.layout.maxWidth / initialTexture.width,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:64] config.layout.maxHeight / initialTexture.height
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:67] const width = initialTexture.width * scale
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:68] const height = initialTexture.height * scale
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:89] this.texture = initialTexture
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:108] this.sprite = new Sprite(initialTexture)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:120] initialPose: 'front_standing'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:170] !Number.isFinite(multiplier) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:213] !Number.isFinite(x) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:214] !Number.isFinite(y) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:215] !Number.isFinite(duration) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:217] !Number.isFinite(lift) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:411] repeat: Infinity,
+[src\renderer\game\entities\Entity.js:258] update(deltaTime, elapsedTime = 0) {
+[src\renderer\game\entities\Entity.js:267] !Number.isFinite(deltaTime) ||
+[src\renderer\game\entities\Entity.js:269] !Number.isFinite(elapsedTime) ||
+[src\renderer\game\entities\Entity.js:278] // Наследники могут переопределить update().
+[src\renderer\game\entities\Entity.js:323] !Number.isFinite(x) ||
+[src\renderer\game\entities\Entity.js:324] !Number.isFinite(y)
+[src\renderer\game\entities\Entity.js:339] !Number.isFinite(width) ||
+[src\renderer\game\entities\Entity.js:340] !Number.isFinite(height) ||
+[src\renderer\game\navigation\MovementController.js:128] !Number.isFinite(value) ||
+[src\renderer\game\navigation\MovementController.js:183] !Number.isFinite(position.x) ||
+[src\renderer\game\navigation\MovementController.js:184] !Number.isFinite(position.y)
+[src\renderer\game\navigation\MovementController.js:229] let nearestDistance = Infinity
+[src\renderer\game\navigation\MovementController.js:414] update(deltaTime) {
+[src\renderer\game\navigation\MovementController.js:423] !Number.isFinite(deltaTime) ||
+[src\renderer\game\navigation\NavigationGraph.js:168] if (!Number.isFinite(cost) || cost < 0) {
+[src\renderer\game\navigation\NavigationGraph.js:339] if (!Number.isFinite(cost) || cost < 0) {
+[src\renderer\game\navigation\NavigationGraph.js:420] !Number.isFinite(node.x)
+[src\renderer\game\navigation\NavigationGraph.js:429] !Number.isFinite(node.y)
+[src\renderer\game\navigation\PathFinder.js:76] false, [], Infinity, 0, 'node-not-found'
+[src\renderer\game\navigation\PathFinder.js:85] false, [], Infinity, 0, 'blocked-node'
+[src\renderer\game\navigation\PathFinder.js:107] false, [], Infinity,
+[src\renderer\game\navigation\PathFinder.js:147] !Number.isFinite(connection.cost) ||
+[src\renderer\game\navigation\PathFinder.js:176] distance.get(neighborId) ?? Infinity
+[src\renderer\game\navigation\PathFinder.js:188] false, [], Infinity, visitedNodes, 'no-path'
+[src\renderer\game\navigation\PathFinder.js:234] let bestScore = Infinity
+[src\renderer\game\navigation\PathFinder.js:238] const score = scores.get(nodeId) ?? Infinity
+[src\renderer\game\navigation\Waypoints.js:123] const maxDistance = options.maxDistance ?? Infinity
+[src\renderer\game\navigation\Waypoints.js:128] maxDistance !== Infinity &&
+[src\renderer\game\navigation\Waypoints.js:129] (!Number.isFinite(maxDistance) || maxDistance < 0)
+[src\renderer\game\navigation\Waypoints.js:175] if (!Number.isFinite(radius) || radius < 0) {
+[src\renderer\game\navigation\Waypoints.js:312] !Number.isFinite(x) ||
+[src\renderer\game\navigation\Waypoints.js:313] !Number.isFinite(y)
+[src\renderer\game\scenes\HiveScene.js:53] this.initialized = false
+[src\renderer\game\scenes\HiveScene.js:58] // INITIALIZE
+[src\renderer\game\scenes\HiveScene.js:61] async initialize() {
+[src\renderer\game\scenes\HiveScene.js:64] if (this.initialized) return true
+[src\renderer\game\scenes\HiveScene.js:148] this.initialized = true
+[src\renderer\game\scenes\HiveScene.js:228] this.initialized = false
+[src\renderer\game\systems\AccessibilitySystem.js:105] this.initialized = false
+[src\renderer\game\systems\AccessibilitySystem.js:116] // INITIALIZATION
+[src\renderer\game\systems\AccessibilitySystem.js:119] initialize() {
+[src\renderer\game\systems\AccessibilitySystem.js:122] if (this.initialized) {
+[src\renderer\game\systems\AccessibilitySystem.js:124] status: 'already_initialized',
+[src\renderer\game\systems\AccessibilitySystem.js:133] this.initialized = true
+[src\renderer\game\systems\AccessibilitySystem.js:135] this.emit('accessibility:initialized', {
+[src\renderer\game\systems\AccessibilitySystem.js:141] status: 'initialized',
+[src\renderer\game\systems\AccessibilitySystem.js:641] !Number.isFinite(value) ||
+[src\renderer\game\systems\AccessibilitySystem.js:694] initialized: this.initialized,
+[src\renderer\game\systems\AccessibilitySystem.js:769] this.initialized = false
+[src\renderer\game\systems\AnimationSystem.js:119] !Number.isFinite(duration) ||
+[src\renderer\game\systems\AnimationSystem.js:121] !Number.isFinite(delay) ||
+[src\renderer\game\systems\AnimationSystem.js:128] repeat !== Infinity &&
+[src\renderer\game\systems\AnimationSystem.js:131] throw new RangeError('AnimationSystem: repeat должен быть целым числом или Infinity.')
+[src\renderer\game\systems\AnimationSystem.js:216] if (!Number.isFinite(endValue)) {
+[src\renderer\game\systems\AnimationSystem.js:224] if (!Number.isFinite(startValue)) {
+[src\renderer\game\systems\AnimationSystem.js:312] update(deltaTime) {
+[src\renderer\game\systems\AnimationSystem.js:317] if (!Number.isFinite(deltaTime) || deltaTime < 0) {
+[src\renderer\game\systems\AnimationSystem.js:446] animation.onUpdate(
+[src\renderer\game\systems\AudioSystem.js:294] !Number.isFinite(playbackRate) ||
+[src\renderer\game\systems\AudioSystem.js:939] !Number.isFinite(volume) ||
+[src\renderer\game\systems\InteractionSystem.js:57] !Number.isFinite(dragThreshold) ||
+[src\renderer\game\systems\InteractionSystem.js:59] !Number.isFinite(clickThreshold) ||
+[src\renderer\game\systems\InteractionSystem.js:169] !Number.isFinite(zIndex)
+[src\renderer\game\systems\InteractionSystem.js:179] !Number.isFinite(hitArea.x) ||
+[src\renderer\game\systems\InteractionSystem.js:180] !Number.isFinite(hitArea.y) ||
+[src\renderer\game\systems\InteractionSystem.js:181] !Number.isFinite(hitArea.width) ||
+[src\renderer\game\systems\InteractionSystem.js:182] !Number.isFinite(hitArea.height) ||
+[src\renderer\game\systems\InteractionSystem.js:269] !Number.isFinite(pointer.x) ||
+[src\renderer\game\systems\InteractionSystem.js:270] !Number.isFinite(pointer.y)
+[src\renderer\game\systems\InteractionSystem.js:283] !Number.isFinite(position.x) ||
+[src\renderer\game\systems\InteractionSystem.js:284] !Number.isFinite(position.y)
+[src\renderer\game\systems\InteractionSystem.js:325] !Number.isFinite(position.x) ||
+[src\renderer\game\systems\InteractionSystem.js:326] !Number.isFinite(position.y)
+[src\renderer\game\systems\InteractionSystem.js:337] !Number.isFinite(width) ||
+[src\renderer\game\systems\InteractionSystem.js:338] !Number.isFinite(height) ||
+[src\renderer\game\systems\InteractionSystem.js:364] !Number.isFinite(point.x) ||
+[src\renderer\game\systems\InteractionSystem.js:365] !Number.isFinite(point.y)
+[src\renderer\game\systems\PerformanceSystem.js:82] this.minFrameTime = Infinity
+[src\renderer\game\systems\PerformanceSystem.js:97] this.initialized = false
+[src\renderer\game\systems\PerformanceSystem.js:101] // INITIALIZATION
+[src\renderer\game\systems\PerformanceSystem.js:104] initialize() {
+[src\renderer\game\systems\PerformanceSystem.js:107] if (this.initialized) {
+[src\renderer\game\systems\PerformanceSystem.js:109] status: 'already_initialized',
+[src\renderer\game\systems\PerformanceSystem.js:114] this.initialized = true
+[src\renderer\game\systems\PerformanceSystem.js:116] this.emit('performance:initialized', {
+[src\renderer\game\systems\PerformanceSystem.js:121] status: 'initialized',
+[src\renderer\game\systems\PerformanceSystem.js:132] update(deltaTime) {
+[src\renderer\game\systems\PerformanceSystem.js:262] !Number.isFinite(duration) ||
+[src\renderer\game\systems\PerformanceSystem.js:279] min: Infinity,
+[src\renderer\game\systems\PerformanceSystem.js:652] !Number.isFinite(fps) ||
+[src\renderer\game\systems\PerformanceSystem.js:776] this.minFrameTime = Infinity
+[src\renderer\game\systems\PerformanceSystem.js:876] !Number.isFinite(value) ||
+[src\renderer\game\systems\PerformanceSystem.js:931] !Number.isFinite(deltaTime) ||
+[src\renderer\game\systems\PerformanceSystem.js:1014] this.initialized = false
+[src\renderer\game\systems\PhysicsSystem.js:51] !Number.isFinite(cellSize) ||
+[src\renderer\game\systems\PhysicsSystem.js:143] !Number.isFinite(position?.x) ||
+[src\renderer\game\systems\PhysicsSystem.js:144] !Number.isFinite(position?.y)
+[src\renderer\game\systems\PhysicsSystem.js:152] !Number.isFinite(width) ||
+[src\renderer\game\systems\PhysicsSystem.js:153] !Number.isFinite(height) ||
+[src\renderer\game\systems\PhysicsSystem.js:167] !Number.isFinite(mass) ||
+[src\renderer\game\systems\PhysicsSystem.js:169] !Number.isFinite(restitution) ||
+[src\renderer\game\systems\PhysicsSystem.js:172] !Number.isFinite(friction) ||
+[src\renderer\game\systems\PhysicsSystem.js:224] !Number.isFinite(body.radius) ||
+[src\renderer\game\systems\PhysicsSystem.js:300] update(deltaTime) {
+[src\renderer\game\systems\PhysicsSystem.js:309] !Number.isFinite(deltaTime) ||
+[src\renderer\game\systems\PhysicsSystem.js:931] !Number.isFinite(value.x) ||
+[src\renderer\game\systems\PhysicsSystem.js:932] !Number.isFinite(value.y)
+[src\renderer\game\systems\PhysicsSystem.js:949] !Number.isFinite(value.x) ||
+[src\renderer\game\systems\PhysicsSystem.js:950] !Number.isFinite(value.y) ||
+[src\renderer\game\systems\PhysicsSystem.js:951] !Number.isFinite(value.width) ||
+[src\renderer\game\systems\PhysicsSystem.js:952] !Number.isFinite(value.height) ||
+[src\renderer\game\systems\RenderingSystem.js:68] this.initialized = false
+[src\renderer\game\systems\RenderingSystem.js:99] this.initialize()
+[src\renderer\game\systems\RenderingSystem.js:103] // INITIALIZATION
+[src\renderer\game\systems\RenderingSystem.js:106] initialize() {
+[src\renderer\game\systems\RenderingSystem.js:110] if (this.initialized) {
+[src\renderer\game\systems\RenderingSystem.js:150] this.initialized = true
+[src\renderer\game\systems\RenderingSystem.js:152] this.emit('rendering:initialized', {
+[src\renderer\game\systems\RenderingSystem.js:166] update(deltaTime = 0) {
+[src\renderer\game\systems\RenderingSystem.js:171] !this.initialized ||
+[src\renderer\game\systems\RenderingSystem.js:180] !Number.isFinite(deltaTime) ||
+[src\renderer\game\systems\RenderingSystem.js:219] !this.initialized ||
+[src\renderer\game\systems\RenderingSystem.js:304] !Number.isFinite(width) ||
+[src\renderer\game\systems\RenderingSystem.js:305] !Number.isFinite(height) ||
+[src\renderer\game\systems\RenderingSystem.js:454] !Number.isFinite(fps) ||
+[src\renderer\game\systems\RenderingSystem.js:562] if (this.initialized) {
+[src\renderer\game\systems\RenderingSystem.js:577] this.initialized = false
+[src\renderer\game\systems\SaveSystem.js:558] !Number.isFinite(data.createdAt) ||
+[src\renderer\game\systems\SaveSystem.js:559] !Number.isFinite(data.updatedAt)
+[src\renderer\game\ui\DialogWindow.js:92] this.initialized = false
+[src\renderer\game\ui\DialogWindow.js:93] this.initializing = false
+[src\renderer\game\ui\DialogWindow.js:108] // INITIALIZATION
+[src\renderer\game\ui\DialogWindow.js:111] initialize() {
+[src\renderer\game\ui\DialogWindow.js:114] if (this.initialized || this.initializing) {
+[src\renderer\game\ui\DialogWindow.js:118] this.initializing = true
+[src\renderer\game\ui\DialogWindow.js:130] this.initialized = true
+[src\renderer\game\ui\DialogWindow.js:143] this.emit('dialog:initialized', this.getState())
+[src\renderer\game\ui\DialogWindow.js:163] this.initialized = false
+[src\renderer\game\ui\DialogWindow.js:167] this.initializing = false
+[src\renderer\game\ui\DialogWindow.js:473] this.ensureInitialized()
+[src\renderer\game\ui\DialogWindow.js:672] this.ensureInitialized()
+[src\renderer\game\ui\DialogWindow.js:692] this.ensureInitialized()
+[src\renderer\game\ui\DialogWindow.js:706] this.ensureInitialized()
+[src\renderer\game\ui\DialogWindow.js:777] if (this.destroyed || !this.initialized) {
+[src\renderer\game\ui\DialogWindow.js:782] !Number.isFinite(screenWidth) ||
+[src\renderer\game\ui\DialogWindow.js:783] !Number.isFinite(screenHeight) ||
+[src\renderer\game\ui\DialogWindow.js:839] this.ensureInitialized()
+[src\renderer\game\ui\DialogWindow.js:918] ensureInitialized() {
+[src\renderer\game\ui\DialogWindow.js:921] if (!this.initialized && !this.initializing) {
+[src\renderer\game\ui\DialogWindow.js:922] this.initialize()
+[src\renderer\game\ui\DialogWindow.js:975] this.initialized = false
+[src\renderer\game\ui\DialogWindow.js:976] this.initializing = false
+[src\renderer\game\ui\GameHUD.js:87] this.initialized = false
+[src\renderer\game\ui\GameHUD.js:88] this.initializing = false
+[src\renderer\game\ui\GameHUD.js:96] // INITIALIZATION
+[src\renderer\game\ui\GameHUD.js:99] initialize() {
+[src\renderer\game\ui\GameHUD.js:102] if (this.initialized || this.initializing) {
+[src\renderer\game\ui\GameHUD.js:106] this.initializing = true
+[src\renderer\game\ui\GameHUD.js:119] this.initialized = true
+[src\renderer\game\ui\GameHUD.js:132] this.emit('hud:initialized', this.getState())
+[src\renderer\game\ui\GameHUD.js:151] this.initialized = false
+[src\renderer\game\ui\GameHUD.js:155] this.initializing = false
+[src\renderer\game\ui\GameHUD.js:444] this.ensureInitialized()
+[src\renderer\game\ui\GameHUD.js:457] this.ensureInitialized()
+[src\renderer\game\ui\GameHUD.js:478] if (!Number.isFinite(progress)) {
+[src\renderer\game\ui\GameHUD.js:489] if (this.initialized) {
+[src\renderer\game\ui\GameHUD.js:547] if (this.initialized) {
+[src\renderer\game\ui\GameHUD.js:606] !Number.isFinite(screenWidth) ||
+[src\renderer\game\ui\GameHUD.js:607] !Number.isFinite(screenHeight) ||
+[src\renderer\game\ui\GameHUD.js:635] this.ensureInitialized()
+[src\renderer\game\ui\GameHUD.js:672] initialized: this.initialized,
+[src\renderer\game\ui\GameHUD.js:706] ensureInitialized() {
+[src\renderer\game\ui\GameHUD.js:709] if (!this.initialized && !this.initializing) {
+[src\renderer\game\ui\GameHUD.js:710] this.initialize()
+[src\renderer\game\ui\GameHUD.js:756] this.initialized = false
+[src\renderer\game\ui\GameHUD.js:757] this.initializing = false
+[src\renderer\game\ui\Inventory.js:78] this.initialized = false
+[src\renderer\game\ui\Inventory.js:86] // INITIALIZATION
+[src\renderer\game\ui\Inventory.js:89] initialize() {
+[src\renderer\game\ui\Inventory.js:92] if (this.initialized) {
+[src\renderer\game\ui\Inventory.js:103] this.initialized = true
+[src\renderer\game\ui\Inventory.js:119] this.emit('inventory:initialized', this.getState())
+[src\renderer\game\ui\Inventory.js:251] this.ensureInitialized()
+[src\renderer\game\ui\Inventory.js:279] this.ensureInitialized()
+[src\renderer\game\ui\Inventory.js:344] this.ensureInitialized()
+[src\renderer\game\ui\Inventory.js:575] this.ensureInitialized()
+[src\renderer\game\ui\Inventory.js:725] this.ensureInitialized()
+[src\renderer\game\ui\Inventory.js:765] !Number.isFinite(screenWidth) ||
+[src\renderer\game\ui\Inventory.js:766] !Number.isFinite(screenHeight) ||
+[src\renderer\game\ui\Inventory.js:827] ensureInitialized() {
+[src\renderer\game\ui\Inventory.js:830] if (!this.initialized) {
+[src\renderer\game\ui\Inventory.js:831] this.initialize()
+[src\renderer\game\ui\Inventory.js:875] this.initialized = false
+[src\renderer\game\ui\UIComponent.js:37] if (!Number.isFinite(zIndex)) {
+[src\renderer\game\ui\UIComponent.js:43] if (!Number.isFinite(alpha) || alpha < 0 || alpha > 1) {
+[src\renderer\game\ui\UIComponent.js:65] this.initialized = false
+[src\renderer\game\ui\UIComponent.js:78] initialize() {
+[src\renderer\game\ui\UIComponent.js:81] if (this.initialized) {
+[src\renderer\game\ui\UIComponent.js:86] const result = this.onInitialize()
+[src\renderer\game\ui\UIComponent.js:90] `[UIComponent:${this.id}] onInitialize() должен быть синхронным.`
+[src\renderer\game\ui\UIComponent.js:94] this.initialized = true
+[src\renderer\game\ui\UIComponent.js:96] this.emit('ui:component-initialized', {
+[src\renderer\game\ui\UIComponent.js:102] this.onInitializeFailed(error)
+[src\renderer\game\ui\UIComponent.js:107] onInitialize() {
+[src\renderer\game\ui\UIComponent.js:111] onInitializeFailed(error) {
+[src\renderer\game\ui\UIComponent.js:118] update(deltaTime) {
+[src\renderer\game\ui\UIComponent.js:121] if (!this.initialized || !this.enabled) {
+[src\renderer\game\ui\UIComponent.js:125] if (!Number.isFinite(deltaTime) || deltaTime < 0) {
+[src\renderer\game\ui\UIComponent.js:129] this.onUpdate(deltaTime)
+[src\renderer\game\ui\UIComponent.js:132] onUpdate(deltaTime) {
+[src\renderer\game\ui\UIComponent.js:142] !Number.isFinite(viewport.width) ||
+[src\renderer\game\ui\UIComponent.js:143] !Number.isFinite(viewport.height) ||
+[src\renderer\game\ui\UIComponent.js:248] !Number.isFinite(alpha) ||
+[src\renderer\game\ui\UIComponent.js:266] if (!Number.isFinite(zIndex)) {
+[src\renderer\game\ui\UIComponent.js:381] initialized: this.initialized,
+[src\renderer\game\ui\UIComponent.js:387] if (!Number.isFinite(value)) {
+[src\renderer\game\ui\UIComponent.js:437] this.initialized = false
+[src\renderer\game\ui\UIManager.js:33] !Number.isFinite(designWidth) ||
+[src\renderer\game\ui\UIManager.js:35] !Number.isFinite(designHeight) ||
+[src\renderer\game\ui\UIManager.js:77] this.initialized = false
+[src\renderer\game\ui\UIManager.js:96] initialize() {
+[src\renderer\game\ui\UIManager.js:99] if (this.initialized) {
+[src\renderer\game\ui\UIManager.js:111] this.initialized = true
+[src\renderer\game\ui\UIManager.js:113] this.emit('ui:initialized', {
+[src\renderer\game\ui\UIManager.js:126] this.initialized = false
+[src\renderer\game\ui\UIManager.js:140] if (!this.initialized) {
+[src\renderer\game\ui\UIManager.js:142] '[UIManager] Сначала необходимо вызвать initialize().'
+[src\renderer\game\ui\UIManager.js:177] if (!Number.isFinite(zIndex)) {
+[src\renderer\game\ui\UIManager.js:215] if (typeof component.initialize === 'function') {
+[src\renderer\game\ui\UIManager.js:216] const result = component.initialize()
+[src\renderer\game\ui\UIManager.js:220] `[UIManager] initialize() компонента "${componentId}" вернул Promise. Асинхронную инициализацию нужно выполнить до add().`
+[src\renderer\game\ui\UIManager.js:373] !Number.isFinite(width) ||
+[src\renderer\game\ui\UIManager.js:375] !Number.isFinite(height) ||
+[src\renderer\game\ui\UIManager.js:425] update(deltaTime) {
+[src\renderer\game\ui\UIManager.js:428] if (!this.initialized || !this.enabled) {
+[src\renderer\game\ui\UIManager.js:432] if (!Number.isFinite(deltaTime) || deltaTime < 0) {
+[src\renderer\game\ui\UIManager.js:446] record.component.update(deltaTime)
+[src\renderer\game\ui\UIManager.js:541] this.initialized = false
+[src\renderer\game\ui\UITheme.js:312] if (!Number.isFinite(color)) {
+[src\renderer\game\ui\UITheme.js:324] if (!Number.isFinite(lineHeight) || lineHeight <= 0) {
+[src\renderer\game\ui\widgets\Button.js:42] !Number.isFinite(resolvedWidth) ||
+[src\renderer\game\ui\widgets\Button.js:44] !Number.isFinite(resolvedHeight) ||
+[src\renderer\game\ui\widgets\Button.js:97] onInitialize() {
+[src\renderer\game\ui\widgets\Button.js:396] if (this.initialized) {
+[src\renderer\game\ui\widgets\Button.js:410] if (this.initialized) {
+[src\renderer\game\ui\widgets\Button.js:437] if (this.initialized) {
+[src\renderer\game\ui\widgets\Button.js:457] if (this.initialized) {
+[src\renderer\game\ui\widgets\Button.js:467] if (this.initialized) {
+[src\renderer\game\ui\widgets\Button.js:474] onUpdate(deltaTime) {
+[src\renderer\game\ui\widgets\Panel.js:115] this.initialized = false
+[src\renderer\game\ui\widgets\Panel.js:120] // INITIALIZATION
+[src\renderer\game\ui\widgets\Panel.js:123] onInitialize() {
+[src\renderer\game\ui\widgets\Panel.js:138] this.initialized = true
+[src\renderer\game\ui\widgets\Panel.js:140] this.emit('panel:initialized', this.getState())
+[src\renderer\game\ui\widgets\Panel.js:209] this.ensureInitializedState()
+[src\renderer\game\ui\widgets\Panel.js:549] if (!Number.isFinite(x) || !Number.isFinite(y)) {
+[src\renderer\game\ui\widgets\Panel.js:640] !Number.isFinite(value) ||
+[src\renderer\game\ui\widgets\Panel.js:649] ensureInitializedState() {
+[src\renderer\game\ui\widgets\Panel.js:674] this.initialized = false
+[src\renderer\game\ui\widgets\ProgressBar.js:40] if (!Number.isFinite(min) || !Number.isFinite(max) || max <= min) {
+[src\renderer\game\ui\widgets\ProgressBar.js:46] if (!Number.isFinite(value)) {
+[src\renderer\game\ui\widgets\ProgressBar.js:65] !Number.isFinite(animationSpeed) ||
+[src\renderer\game\ui\widgets\ProgressBar.js:73] if (!Number.isFinite(radius) || radius < 0) {
+[src\renderer\game\ui\widgets\ProgressBar.js:134] this.initialized = false
+[src\renderer\game\ui\widgets\ProgressBar.js:137] onInitialize() {
+[src\renderer\game\ui\widgets\ProgressBar.js:353] update(deltaTime) {
+[src\renderer\game\ui\widgets\ProgressBar.js:354] super.update(deltaTime)
+[src\renderer\game\ui\widgets\ProgressBar.js:357] onUpdate(deltaTime) {
+[src\renderer\game\ui\widgets\ProgressBar.js:381] if (!Number.isFinite(value)) {
+[src\renderer\game\ui\widgets\ProgressBar.js:395] if (this.initialized) {
+[src\renderer\game\ui\widgets\ProgressBar.js:413] !Number.isFinite(min) ||
+[src\renderer\game\ui\widgets\ProgressBar.js:414] !Number.isFinite(max) ||
+[src\renderer\game\ui\widgets\ProgressBar.js:428] if (this.initialized) {
+[src\renderer\game\ui\widgets\ProgressBar.js:449] if (this.initialized) {
+[src\renderer\game\ui\widgets\ProgressBar.js:490] if (this.initialized) {
+[src\renderer\game\ui\widgets\ProgressBar.js:503] if (this.initialized) {
+[src\renderer\game\ui\widgets\ProgressBar.js:537] if (this.initialized) {
+[src\renderer\game\world\Camera.js:33] !Number.isFinite(minZoom) ||
+[src\renderer\game\world\Camera.js:34] !Number.isFinite(maxZoom) ||
+[src\renderer\game\world\Camera.js:115] !Number.isFinite(x) ||
+[src\renderer\game\world\Camera.js:116] !Number.isFinite(y)
+[src\renderer\game\world\Camera.js:138] !Number.isFinite(deltaX) ||
+[src\renderer\game\world\Camera.js:139] !Number.isFinite(deltaY)
+[src\renderer\game\world\Camera.js:169] if (!Number.isFinite(value) || value <= 0) {
+[src\renderer\game\world\Camera.js:287] !Number.isFinite(width) ||
+[src\renderer\game\world\Camera.js:288] !Number.isFinite(height) ||
+[src\renderer\game\world\CoordinateSystem.js:118] !Number.isFinite(x) ||
+[src\renderer\game\world\CoordinateSystem.js:119] !Number.isFinite(y)
+[src\renderer\game\world\CoordinateSystem.js:132] !Number.isFinite(width) ||
+[src\renderer\game\world\CoordinateSystem.js:133] !Number.isFinite(height) ||
+[src\renderer\game\world\World.js:206] '[Saylo World] Объект должен иметь метод update().'
+[src\renderer\game\world\World.js:230] update(deltaTime, elapsedTime = 0) {
+[src\renderer\game\world\World.js:235] !Number.isFinite(deltaTime) ||
+[src\renderer\game\world\World.js:246] object.update(deltaTime, elapsedTime)
+[src\renderer\game\world\World.js:290] !Number.isFinite(width) ||
+[src\renderer\game\world\World.js:291] !Number.isFinite(height) ||
+[src\renderer\game\world\WorldMap.js:386] !Number.isFinite(data.width) ||
+[src\renderer\game\world\WorldMap.js:387] !Number.isFinite(data.height) ||
+[src\renderer\game\world\WorldMap.js:413] !Number.isFinite(x) ||
+[src\renderer\game\world\WorldMap.js:414] !Number.isFinite(y)
+[tests\phonetics-diagnostic.js:5] engine.initialize();
+Всего совпадений: 533
+
+==============================================================================
+4. SCENES / ADAPTERS: IMPORTS AND USAGE
+==============================================================================
+[src\renderer\game\adapters\AudioAdapter.js:2] // Module: adapters\AudioAdapter.js
+[src\renderer\game\adapters\LessonAdapter.js:2] // Module: adapters\LessonAdapter.js
+[src\renderer\game\adapters\ProfileAdapter.js:2] // Module: adapters\ProfileAdapter.js
+[src\renderer\game\core\GameEngine.js:18] import { HiveScene } from '../scenes/HiveScene.js'
+[src\renderer\game\core\GameEngine.js:175] this.scene = new HiveScene(
+[src\renderer\game\core\GameEngine.js:344] cleanup('HiveScene', () => this.scene.destroy())
+[src\renderer\game\scenes\GardenScene.js:2] // Module: scenes\GardenScene.js
+[src\renderer\game\scenes\HiveScene.js:12] export class HiveScene {
+[src\renderer\game\scenes\HiveScene.js:49] this.container.label = 'HiveScene'
+[src\renderer\game\scenes\HomeScene.js:2] // Module: scenes\HomeScene.js
+[src\renderer\game\scenes\LessonScene.js:2] // Module: scenes\LessonScene.js
+[src\renderer\game\scenes\LibraryScene.js:2] // Module: scenes\LibraryScene.js
+[src\renderer\game\scenes\SceneManager.js:2] // Module: scenes\SceneManager.js
+Всего совпадений: 13
+
+==============================================================================
+5. BEE CHARACTER: ANIMATION / STATES / BODY PARTS
+==============================================================================
+[src\core\exercise\ArticulationTrainingPlanner.js:69] const units = analysis?.phonological?.surfaceDetails
+[src\core\exercise\ArticulationTrainingPlanner.js:130] const units = analysis.phonological.surfaceDetails
+[src\core\exercise\ArticulationTrainingPlanner.js:152] unit.underlyingSoundId !== unit.surfaceSoundId ||
+[src\core\exercise\ArticulationTrainingPlanner.js:153] unit.underlyingPhoneme !== unit.surfacePhoneme
+[src\core\exercise\ArticulationTrainingPlanner.js:169] phoneme: previous.surfacePhoneme,
+[src\core\exercise\ArticulationTrainingPlanner.js:171] soundId: previous.surfaceSoundId
+[src\core\exercise\ArticulationTrainingPlanner.js:174] phoneme: next.surfacePhoneme,
+[src\core\exercise\ArticulationTrainingPlanner.js:176] soundId: next.surfaceSoundId
+[src\core\exercise\ArticulationTrainingPlanner.js:180] surfaceChanged: changed,
+[src\core\exercise\ArticulationTrainingPlanner.js:188] if (positions.some(item => item.surfaceChanged)) {
+[src\core\exercise\ArticulationTrainingPlanner.js:234] hasSurfaceChanges: positions.some(
+[src\core\exercise\ArticulationTrainingPlanner.js:235] item => item.surfaceChanged
+[src\core\phonetics\PhonemePositionAnalyzer.js:11] !Array.isArray(phonological.surfaceDetails)) {
+[src\core\phonetics\PhonemePositionAnalyzer.js:24] const units = phonological.surfaceDetails
+[src\core\phonetics\PhonemePositionAnalyzer.js:32] unit.surfaceSoundId === targetSoundId
+[src\core\phonetics\PhonemePositionAnalyzer.js:54] surface: {
+[src\core\phonetics\PhonemePositionAnalyzer.js:55] soundId: unit.surfaceSoundId,
+[src\core\phonetics\PhonemePositionAnalyzer.js:56] phoneme: unit.surfacePhoneme
+[src\core\phonetics\PhonemePositionAnalyzer.js:59] changedByProcess: unit.underlyingSoundId !== unit.surfaceSoundId ||
+[src\core\phonetics\PhonemePositionAnalyzer.js:60] unit.underlyingPhoneme !== unit.surfacePhoneme,
+[src\core\phonetics\PhonemePositionAnalyzer.js:64] soundId: previous.surfaceSoundId,
+[src\core\phonetics\PhonemePositionAnalyzer.js:65] phoneme: previous.surfacePhoneme,
+[src\core\phonetics\PhonemePositionAnalyzer.js:69] soundId: next.surfaceSoundId,
+[src\core\phonetics\PhonemePositionAnalyzer.js:70] phoneme: next.surfacePhoneme,
+[src\core\phonetics\PhoneticContextAnalyzer.js:17] const data = this.getPhonemeData(unit?.surfaceSoundId)
+[src\core\phonetics\PhoneticContextAnalyzer.js:20] soundId: unit?.surfaceSoundId || null,
+[src\core\phonetics\PhoneticContextAnalyzer.js:21] phoneme: unit?.surfacePhoneme || null,
+[src\core\phonetics\PhoneticContextAnalyzer.js:74] if (!analysis?.phonological?.surfaceDetails) {
+[src\core\phonetics\PhoneticContextAnalyzer.js:84] const units = analysis.phonological.surfaceDetails
+[src\core\phonetics\PhoneticContextAnalyzer.js:93] unit.surfaceSoundId !== targetSoundId
+[src\core\phonetics\PhoneticContextAnalyzer.js:140] unit.underlyingSoundId !== unit.surfaceSoundId ||
+[src\core\phonetics\PhoneticContextAnalyzer.js:141] unit.underlyingPhoneme !== unit.surfacePhoneme
+[src\core\phonetics\PhonologicalProcessEngine.js:71] const surfaceDetails = units.map(unit => {
+[src\core\phonetics\PhonologicalProcessEngine.js:83] surfaceSoundId: unit.currentSoundId,
+[src\core\phonetics\PhonologicalProcessEngine.js:84] surfacePhoneme: unit.surfaceSymbol || phoneme?.phoneme || null,
+[src\core\phonetics\PhonologicalProcessEngine.js:119] surfaceSequence: surfaceDetails.map(
+[src\core\phonetics\PhonologicalProcessEngine.js:120] item => item.surfacePhoneme
+[src\core\phonetics\PhonologicalProcessEngine.js:123] surfaceTranscription: surfaceDetails
+[src\core\phonetics\PhonologicalProcessEngine.js:124] .map(item => item.surfacePhoneme)
+[src\core\phonetics\PhonologicalProcessEngine.js:127] surfaceDetails,
+[src\core\phonetics\PhonologicalProcessEngine.js:155] surfaceSymbol: null,
+[src\core\phonetics\PhonologicalProcessEngine.js:294] followingLetter: next.letter,
+[src\core\phonetics\PhonologicalProcessEngine.js:451] unit.surfaceSymbol = reduction.symbol
+[src\core\phonetics\PhonologicalProcessEngine.js:463] surface: reduction.symbol,
+[src\core\phonetics\RussianPhoneticsEngine.js:213] surfaceTranscription: phonological.surfaceTranscription,
+[src\core\phonetics\SyllableStructureEngine.js:7] if (Array.isArray(phonological?.surfaceDetails) &&
+[src\core\phonetics\SyllableStructureEngine.js:8] phonological.surfaceDetails.length > 0) {
+[src\core\phonetics\SyllableStructureEngine.js:9] return phonological.surfaceDetails.map((unit, index) => ({
+[src\core\phonetics\SyllableStructureEngine.js:15] surfacePhoneme:
+[src\core\phonetics\SyllableStructureEngine.js:16] unit.surfacePhoneme || unit.underlyingPhoneme || '',
+[src\core\phonetics\SyllableStructureEngine.js:30] surfacePhoneme: phoneme,
+[src\core\phonetics\SyllableStructureEngine.js:41] unit.surfacePhoneme || unit.underlyingPhoneme || ''
+[src\core\phonetics\SyllableStructureEngine.js:63] unit.surfacePhoneme || unit.underlyingPhoneme || ''
+[src\core\phonetics\SyllableStructureEngine.js:182] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:219] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:227] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:232] phoneme: vowel.surfacePhoneme,
+[src\core\phonetics\SyllableStructureEngine.js:239] unit => unit.surfacePhoneme
+[src\renderer\app.js:36] type: 'listen'
+[src\renderer\app.js:91] listenButton: document.getElementById('listenButton'),
+[src\renderer\app.js:157] flyBeeHome()
+[src\renderer\app.js:207] function flyBeeToLesson() {
+[src\renderer\app.js:209] const bee = gameEngine?.scene?.beeCharacter
+[src\renderer\app.js:349] bee.flyTo(
+[src\renderer\app.js:365] function flyBeeHome() {
+[src\renderer\app.js:367] const bee = gameEngine?.scene?.beeCharacter
+[src\renderer\app.js:371] bee.flyHome({
+[src\renderer\app.js:386] flyBeeToLesson()
+[src\renderer\app.js:418] elements.listenButton.classList.remove('hidden')
+[src\renderer\app.js:434] button.addEventListener('click', () => {
+[src\renderer\app.js:444] elements.listenButton.classList.remove('hidden')
+[src\renderer\app.js:449] elements.listenButton.classList.add('hidden')
+[src\renderer\app.js:1020] card.addEventListener('click', async () => {
+[src\renderer\app.js:1104] ?.addEventListener('click', createChildProfileFromUI)
+[src\renderer\app.js:1107] ?.addEventListener('click', addTargetSoundFromUI)
+[src\renderer\app.js:1110] ?.addEventListener('change', async event => {
+[src\renderer\app.js:1122] elements.startLessonButton.addEventListener('click', startLesson)
+[src\renderer\app.js:1124] elements.parentsButton.addEventListener('click', openParents)
+[src\renderer\app.js:1126] elements.lessonBackButton.addEventListener('click', goHome)
+[src\renderer\app.js:1128] elements.parentsBackButton.addEventListener('click', goHome)
+[src\renderer\app.js:1130] elements.finishHomeButton.addEventListener('click', goHome)
+[src\renderer\app.js:1132] elements.listenButton.addEventListener('click', () => {
+[src\renderer\app.js:1140] elements.nextTaskButton.addEventListener('click', nextTask)
+[src\renderer\app.js:1142] elements.recordButton.addEventListener('click', toggleChildRecording)
+[src\renderer\app.js:1144] elements.parentRecordButton.addEventListener(
+[src\renderer\app.js:1149] elements.parentStopButton.addEventListener(
+[src\renderer\app.js:1154] elements.transcribeButton.addEventListener(
+[src\renderer\app.js:1159] elements.saveAudioButton.addEventListener(
+[src\renderer\app.js:1168] window.addEventListener('beforeunload', () => {
+[src\renderer\app.js:1264] image.addEventListener('load', finishSplash, { once: true })
+[src\renderer\app.js:1265] image.addEventListener('error', () => {
+[src\renderer\game\assets\manifest.js:15] type: 'texture',
+[src\renderer\game\assets\manifest.js:22] type: 'texture',
+[src\renderer\game\assets\manifest.js:28] type: 'texture',
+[src\renderer\game\assets\manifest.js:34] type: 'texture',
+[src\renderer\game\assets\manifest.js:40] type: 'texture',
+[src\renderer\game\assets\manifest.js:46] type: 'texture',
+[src\renderer\game\assets\manifest.js:52] type: 'texture',
+[src\renderer\game\assets\manifest.js:58] type: 'texture',
+[src\renderer\game\assets\manifest.js:64] type: 'texture',
+[src\renderer\game\assets\manifest.js:70] type: 'texture',
+[src\renderer\game\assets\manifest.js:76] type: 'texture',
+[src\renderer\game\assets\manifest.js:82] type: 'texture',
+[src\renderer\game\core\EventBus.js:10] this.listeners = new Map()
+[src\renderer\game\core\EventBus.js:26] if (!this.listeners.has(eventName)) {
+[src\renderer\game\core\EventBus.js:27] this.listeners.set(eventName, new Set())
+[src\renderer\game\core\EventBus.js:30] const callbacks = this.listeners.get(eventName)
+[src\renderer\game\core\EventBus.js:60] const callbacks = this.listeners.get(eventName)
+[src\renderer\game\core\EventBus.js:67] this.listeners.delete(eventName)
+[src\renderer\game\core\EventBus.js:81] const callbacks = this.listeners.get(eventName)
+[src\renderer\game\core\EventBus.js:111] this.listeners.clear()
+[src\renderer\game\core\EventBus.js:115] this.listeners.delete(eventName)
+[src\renderer\game\core\EventBus.js:122] hasListeners(eventName) {
+[src\renderer\game\core\EventBus.js:124] return (this.listeners.get(eventName)?.size ?? 0) > 0
+[src\renderer\game\core\EventBus.js:131] listenerCount(eventName) {
+[src\renderer\game\core\EventBus.js:133] return this.listeners.get(eventName)?.size ?? 0
+[src\renderer\game\core\EventBus.js:161] this.listeners.clear()
+[src\renderer\game\core\GameLoop.js:64] document.addEventListener(
+[src\renderer\game\core\GameLoop.js:319] document.removeEventListener(
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:1] import { Sprite } from 'pixi.js'
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:9] export class BeeAnimator {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:14] textures,
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:18] if (!character?.container || !character.sprite) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:19] throw new TypeError('[BeeAnimator] Персонаж не подключён.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:27] throw new TypeError('[BeeAnimator] AnimationSystem не подключён.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:30] if (!textures || !textures[initialPose]) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:31] throw new TypeError('[BeeAnimator] Не найдена начальная поза.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:36] this.textures = textures
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:55] const texture = this.textures[pose]
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:57] if (!texture) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:58] throw new Error(`[BeeAnimator] Неизвестная поза: ${pose}`)
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:62] throw new RangeError('[BeeAnimator] Некорректная длительность.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:76] const from = this.character.sprite
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:78] const to = new Sprite(texture)
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:84] this.character.baseSpriteScale *
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:140] texture: false,
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:141] textureSource: false
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:144] this.character.sprite = to
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:145] this.character.texture = to.texture
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:183] texture: false,
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:184] textureSource: false
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:189] this.character.sprite = keep
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:190] this.character.texture = keep.texture
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:208] throw new RangeError('[BeeAnimator] Некорректный масштаб.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:211] const sprites = new Set([
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:212] this.character.sprite,
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:217] for (const sprite of sprites) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:218] if (sprite && !sprite.destroyed) {
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:219] sprite.scale.set(scale)
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:231] throw new Error('[BeeAnimator] Аниматор уничтожен.')
+[src\renderer\game\entities\characters\bee\BeeAnimator.js:243] this.textures = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:1] import { Container, Sprite } from 'pixi.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:4] import { BEE_CONFIG } from './BeeConfig.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:5] import { BeeAnimator } from './BeeAnimator.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:6] import { BeeStateMachine } from './BeeStateMachine.js'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:14] export class BeeCharacter extends Entity {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:17] texture,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:18] poseTextures = {},
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:23] config = BEE_CONFIG
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:26] const initialTexture = poseTextures.front_standing || texture
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:29] !initialTexture ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:30] !Number.isFinite(initialTexture.width) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:31] !Number.isFinite(initialTexture.height) ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:32] initialTexture.width <= 0 ||
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:33] initialTexture.height <= 0
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:55] const hasPoseSet = Boolean(poseTextures.front_standing)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:63] config.layout.maxWidth / initialTexture.width,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:64] config.layout.maxHeight / initialTexture.height
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:67] const width = initialTexture.width * scale
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:68] const height = initialTexture.height * scale
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:89] this.texture = initialTexture
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:90] this.poseTextures = poseTextures
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:97] this.baseSpriteScale = scale
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:100] this.idleAnimationId = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:105] this.container.label = 'BeeCharacter'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:108] this.sprite = new Sprite(initialTexture)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:109] this.sprite.label = 'BeeCharacterSprite'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:110] this.sprite.anchor.set(0.5)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:111] this.sprite.scale.set(scale)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:113] this.container.addChild(this.sprite)
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:116] ? new BeeAnimator({
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:119] textures: poseTextures,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:125] ? new BeeStateMachine({ character: this })
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:184] this.baseSpriteScale * multiplier
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:186] } else if (this.sprite) {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:187] this.sprite.scale.set(
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:188] this.baseSpriteScale * multiplier
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:203] flyTo(x, y, {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:230] this.idleAnimationId = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:243] ? 'flying_left'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:245] ? 'flying_right'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:321] this.startIdleAnimation()
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:337] flyHome(options = {}) {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:343] return this.flyTo(
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:354] arrivalState: options.arrivalState ?? 'idle'
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:393] startIdleAnimation() {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:397] if (this.idleAnimationId) {
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:398] return this.idleAnimationId
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:403] this.idleAnimationId = this.animationSystem.animate(
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:406] y: currentY - this.config.idle.floatDistance
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:409] duration: this.config.idle.duration,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:410] easing: this.config.idle.easing,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:418] return this.idleAnimationId
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:452] this.sprite = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:453] this.texture = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:454] this.poseTextures = null
+[src\renderer\game\entities\characters\bee\BeeConfig.js:1] export const BEE_CONFIG = Object.freeze({
+[src\renderer\game\entities\characters\bee\BeeConfig.js:14] idle: Object.freeze({
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:3] idle: 'front_standing',
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:7] flying_left: 'left_profile',
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:8] flying_right: 'right_profile',
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:10] flying_away: 'back_view',
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:16] flying_horizontal: 'horizontal_flight',
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:28] export class BeeStateMachine {
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:33] throw new TypeError('[BeeStateMachine] Персонаж не подключён.')
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:37] this.currentState = 'idle'
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:48] throw new Error(`[BeeStateMachine] Неизвестное состояние: ${state}`)
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:79] throw new Error('[BeeStateMachine] Машина состояний уничтожена.')
+[src\renderer\game\scenes\HiveScene.js:2] import { Container, Sprite } from 'pixi.js'
+[src\renderer\game\scenes\HiveScene.js:4] import { BeeCharacter } from '../entities/characters/bee/BeeCharacter.js'
+[src\renderer\game\scenes\HiveScene.js:46] this.beeCharacter = null
+[src\renderer\game\scenes\HiveScene.js:69] const texture = this.assetManager.get('hiveInterior')
+[src\renderer\game\scenes\HiveScene.js:71] if (!texture) {
+[src\renderer\game\scenes\HiveScene.js:77] const beeTexture = this.assetManager.get('beeFlight')
+[src\renderer\game\scenes\HiveScene.js:79] if (!beeTexture) {
+[src\renderer\game\scenes\HiveScene.js:84] const poseTextures = {                front_standing: this.assetManager.get('beePoseFrontStanding'),
+[src\renderer\game\scenes\HiveScene.js:96] for (const [pose, poseTexture] of Object.entries(poseTextures)) {
+[src\renderer\game\scenes\HiveScene.js:97] if (!poseTexture) {
+[src\renderer\game\scenes\HiveScene.js:104] const background = new Sprite(texture)
+[src\renderer\game\scenes\HiveScene.js:110] this.world.width / texture.width,
+[src\renderer\game\scenes\HiveScene.js:111] this.world.height / texture.height
+[src\renderer\game\scenes\HiveScene.js:132] this.beeCharacter = new BeeCharacter({
+[src\renderer\game\scenes\HiveScene.js:133] texture: beeTexture,
+[src\renderer\game\scenes\HiveScene.js:134] poseTextures,
+[src\renderer\game\scenes\HiveScene.js:142] this.beeCharacter.container,
+[src\renderer\game\scenes\HiveScene.js:146] this.beeCharacter.startIdleAnimation()
+[src\renderer\game\scenes\HiveScene.js:162] if (this.beeCharacter) {
+[src\renderer\game\scenes\HiveScene.js:163] this.world?.removeFromLayer(this.beeCharacter.container)
+[src\renderer\game\scenes\HiveScene.js:164] this.beeCharacter.destroy()
+[src\renderer\game\scenes\HiveScene.js:165] this.beeCharacter = null
+[src\renderer\game\scenes\HiveScene.js:201] if (this.beeCharacter) {
+[src\renderer\game\scenes\HiveScene.js:202] this.world?.removeFromLayer(this.beeCharacter.container)
+[src\renderer\game\scenes\HiveScene.js:203] this.beeCharacter.destroy()
+[src\renderer\game\scenes\HiveScene.js:204] this.beeCharacter = null
+[src\renderer\game\systems\AudioSystem.js:195] audio.removeEventListener(
+[src\renderer\game\systems\AudioSystem.js:200] audio.removeEventListener(
+[src\renderer\game\systems\AudioSystem.js:221] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:227] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:334] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:340] audio.addEventListener(
+[src\renderer\game\systems\DialogueSystem.js:33] this.status = 'idle'
+[src\renderer\game\systems\GameFlowSystem.js:31] this.status = 'idle'
+[src\renderer\game\systems\InputSystem.js:18] if (!target || typeof target.addEventListener !== 'function') {
+[src\renderer\game\systems\InputSystem.js:19] throw new TypeError('InputSystem: target должен поддерживать addEventListener.')
+[src\renderer\game\systems\InputSystem.js:24] typeof pointerTarget.addEventListener !== 'function'
+[src\renderer\game\systems\InputSystem.js:64] this.target.addEventListener('keydown', this.handleKeyDown)
+[src\renderer\game\systems\InputSystem.js:65] this.target.addEventListener('keyup', this.handleKeyUp)
+[src\renderer\game\systems\InputSystem.js:66] this.target.addEventListener('blur', this.handleBlur)
+[src\renderer\game\systems\InputSystem.js:69] this.pointerTarget.addEventListener('pointerdown', this.handlePointerDown)
+[src\renderer\game\systems\InputSystem.js:70] this.pointerTarget.addEventListener('pointermove', this.handlePointerMove)
+[src\renderer\game\systems\InputSystem.js:71] this.pointerTarget.addEventListener('pointerup', this.handlePointerUp)
+[src\renderer\game\systems\InputSystem.js:72] this.pointerTarget.addEventListener('pointercancel', this.handlePointerCancel)
+[src\renderer\game\systems\InputSystem.js:85] this.target.removeEventListener('keydown', this.handleKeyDown)
+[src\renderer\game\systems\InputSystem.js:86] this.target.removeEventListener('keyup', this.handleKeyUp)
+[src\renderer\game\systems\InputSystem.js:87] this.target.removeEventListener('blur', this.handleBlur)
+[src\renderer\game\systems\InputSystem.js:90] this.pointerTarget.removeEventListener('pointerdown', this.handlePointerDown)
+[src\renderer\game\systems\InputSystem.js:91] this.pointerTarget.removeEventListener('pointermove', this.handlePointerMove)
+[src\renderer\game\systems\InputSystem.js:92] this.pointerTarget.removeEventListener('pointerup', this.handlePointerUp)
+[src\renderer\game\systems\InputSystem.js:93] this.pointerTarget.removeEventListener('pointercancel', this.handlePointerCancel)
+[src\renderer\game\systems\RenderingSystem.js:124] window.addEventListener(
+[src\renderer\game\systems\RenderingSystem.js:144] document.addEventListener(
+[src\renderer\game\systems\RenderingSystem.js:564] window.removeEventListener(
+[src\renderer\game\systems\RenderingSystem.js:569] document.removeEventListener(
+[src\renderer\game\ui\DialogWindow.js:140] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\DialogWindow.js:940] window.removeEventListener(
+[src\renderer\game\ui\GameHUD.js:129] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\GameHUD.js:728] window.removeEventListener('resize', this.handleResize)
+[src\renderer\game\ui\Inventory.js:116] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\Inventory.js:847] window.removeEventListener('resize', this.handleResize)
+[src\renderer\game\ui\widgets\Panel.js:205] // DRAWING
+[tests\phonetics-diagnostic.js:32] result.phonological.surfaceTranscription);
+[tests\progressTaskResult.test.js:24] exerciseId: 'listen-001',
+[tests\progressTaskResult.test.js:35] exerciseId: 'listen-002',
+[tests\sessionProgressEvaluation.test.js:48] exerciseId: `listen-${attemptNumber}`,
+Всего совпадений: 284
+
+==============================================================================
+6. EVENT CONNECTIONS: ON / EMIT / LISTEN
+==============================================================================
+[electron\main.js:205] app.on('window-all-closed', () => {
+[src\renderer\app.js:434] button.addEventListener('click', () => {
+[src\renderer\app.js:1020] card.addEventListener('click', async () => {
+[src\renderer\app.js:1104] ?.addEventListener('click', createChildProfileFromUI)
+[src\renderer\app.js:1107] ?.addEventListener('click', addTargetSoundFromUI)
+[src\renderer\app.js:1110] ?.addEventListener('change', async event => {
+[src\renderer\app.js:1122] elements.startLessonButton.addEventListener('click', startLesson)
+[src\renderer\app.js:1124] elements.parentsButton.addEventListener('click', openParents)
+[src\renderer\app.js:1126] elements.lessonBackButton.addEventListener('click', goHome)
+[src\renderer\app.js:1128] elements.parentsBackButton.addEventListener('click', goHome)
+[src\renderer\app.js:1130] elements.finishHomeButton.addEventListener('click', goHome)
+[src\renderer\app.js:1132] elements.listenButton.addEventListener('click', () => {
+[src\renderer\app.js:1140] elements.nextTaskButton.addEventListener('click', nextTask)
+[src\renderer\app.js:1142] elements.recordButton.addEventListener('click', toggleChildRecording)
+[src\renderer\app.js:1144] elements.parentRecordButton.addEventListener(
+[src\renderer\app.js:1149] elements.parentStopButton.addEventListener(
+[src\renderer\app.js:1154] elements.transcribeButton.addEventListener(
+[src\renderer\app.js:1159] elements.saveAudioButton.addEventListener(
+[src\renderer\app.js:1168] window.addEventListener('beforeunload', () => {
+[src\renderer\app.js:1264] image.addEventListener('load', finishSplash, { once: true })
+[src\renderer\app.js:1265] image.addEventListener('error', () => {
+[src\renderer\game\core\EventBus.js:7] export class EventBus {
+[src\renderer\game\core\EventBus.js:23] throw new Error('[EventBus] Шина событий уничтожена.')
+[src\renderer\game\core\EventBus.js:35] return () => this.off(eventName, callback)
+[src\renderer\game\core\EventBus.js:46] const unsubscribe = this.on(eventName, (...args) => {
+[src\renderer\game\core\EventBus.js:95] `[EventBus] Ошибка обработчика события "${eventName}":`,
+[src\renderer\game\core\EventBus.js:144] '[EventBus] Имя события должно быть непустой строкой.'
+[src\renderer\game\core\EventBus.js:150] '[EventBus] Обработчик события должен быть функцией.'
+[src\renderer\game\core\GameEngine.js:7] import { EventBus } from './EventBus.js'
+[src\renderer\game\core\GameEngine.js:34] this.eventBus = null
+[src\renderer\game\core\GameEngine.js:121] this.eventBus = new EventBus()
+[src\renderer\game\core\GameEngine.js:123] eventBus: this.eventBus
+[src\renderer\game\core\GameEngine.js:128] this.gameState = new GameState(this.eventBus)
+[src\renderer\game\core\GameEngine.js:164] eventBus: this.eventBus,
+[src\renderer\game\core\GameEngine.js:180] eventBus: this.eventBus
+[src\renderer\game\core\GameEngine.js:190] eventBus: this.eventBus,
+[src\renderer\game\core\GameEngine.js:214] this.eventBus.emit('engine:initialized', {
+[src\renderer\game\core\GameEngine.js:393] if (this.eventBus) {
+[src\renderer\game\core\GameEngine.js:394] cleanup('EventBus', () => this.eventBus.destroy())
+[src\renderer\game\core\GameEngine.js:395] this.eventBus = null
+[src\renderer\game\core\GameLoop.js:12] eventBus = null,
+[src\renderer\game\core\GameLoop.js:23] this.eventBus = eventBus
+[src\renderer\game\core\GameLoop.js:64] document.addEventListener(
+[src\renderer\game\core\GameLoop.js:95] this.eventBus?.emit('loop:start')
+[src\renderer\game\core\GameLoop.js:118] this.eventBus?.emit('loop:pause')
+[src\renderer\game\core\GameLoop.js:141] this.eventBus?.emit('loop:resume')
+[src\renderer\game\core\GameLoop.js:165] this.eventBus?.emit('loop:stop')
+[src\renderer\game\core\GameLoop.js:259] this.eventBus?.emit('loop:error', {
+[src\renderer\game\core\GameLoop.js:319] document.removeEventListener(
+[src\renderer\game\core\GameLoop.js:329] this.eventBus = null
+[src\renderer\game\core\GameState.js:9] constructor(eventBus = null) {
+[src\renderer\game\core\GameState.js:11] this.eventBus = eventBus
+[src\renderer\game\core\GameState.js:71] this.eventBus?.emit('state:changed', {
+[src\renderer\game\core\GameState.js:77] this.eventBus?.emit(`state:${key}`, {
+[src\renderer\game\core\GameState.js:138] this.eventBus?.emit('state:changed', change)
+[src\renderer\game\core\GameState.js:140] this.eventBus?.emit(`state:${change.key}`, {
+[src\renderer\game\core\GameState.js:168] this.eventBus?.emit('state:reset', {
+[src\renderer\game\core\GameState.js:196] this.eventBus = null
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:22] eventBus = null,
+[src\renderer\game\entities\characters\bee\BeeCharacter.js:85] eventBus
+[src\renderer\game\entities\characters\bee\BeeStateMachine.js:60] this.character.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:21] eventBus = null
+[src\renderer\game\entities\Entity.js:55] this.eventBus = eventBus
+[src\renderer\game\entities\Entity.js:100] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:129] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:158] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:190] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:221] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:388] this.eventBus?.emit(
+[src\renderer\game\entities\Entity.js:402] this.eventBus = null
+[src\renderer\game\navigation\MovementController.js:27] eventBus = null,
+[src\renderer\game\navigation\MovementController.js:36] eventBus
+[src\renderer\game\navigation\MovementController.js:46] this.eventBus = eventBus
+[src\renderer\game\navigation\MovementController.js:74] eventBus
+[src\renderer\game\navigation\MovementController.js:116] eventBus !== null &&
+[src\renderer\game\navigation\MovementController.js:117] typeof eventBus.emit !== 'function'
+[src\renderer\game\navigation\MovementController.js:120] 'MovementController: некорректный EventBus.'
+[src\renderer\game\navigation\MovementController.js:150] if (!this.eventBus) return
+[src\renderer\game\navigation\MovementController.js:153] this.eventBus.emit(eventName, {
+[src\renderer\game\navigation\MovementController.js:284] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:293] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:304] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:323] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:339] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:351] this.emit('movement:failed', {
+[src\renderer\game\navigation\MovementController.js:401] this.emit('movement:started', {
+[src\renderer\game\navigation\MovementController.js:513] this.emit('movement:waypoint-reached', {
+[src\renderer\game\navigation\MovementController.js:541] this.emit('movement:arrived', {
+[src\renderer\game\navigation\MovementController.js:569] this.emit('movement:stopped', {
+[src\renderer\game\navigation\MovementController.js:590] this.emit('movement:paused', {
+[src\renderer\game\navigation\MovementController.js:606] this.emit('movement:resumed', {
+[src\renderer\game\navigation\MovementController.js:677] this.eventBus = null
+[src\renderer\game\navigation\NavigationGraph.js:9] constructor(eventBus = null) {
+[src\renderer\game\navigation\NavigationGraph.js:11] this.eventBus = eventBus
+[src\renderer\game\navigation\NavigationGraph.js:70] this.eventBus?.emit('navigation:node-added', {
+[src\renderer\game\navigation\NavigationGraph.js:97] this.eventBus?.emit('navigation:node-removed', {
+[src\renderer\game\navigation\NavigationGraph.js:220] this.eventBus?.emit('navigation:connected', {
+[src\renderer\game\navigation\NavigationGraph.js:267] this.eventBus?.emit('navigation:disconnected', {
+[src\renderer\game\navigation\NavigationGraph.js:373] this.eventBus?.emit('navigation:cost-changed', {
+[src\renderer\game\navigation\NavigationGraph.js:511] this.eventBus = null
+[src\renderer\game\navigation\PathFinder.js:13] eventBus = null,
+[src\renderer\game\navigation\PathFinder.js:30] this.eventBus = eventBus
+[src\renderer\game\navigation\PathFinder.js:296] this.eventBus?.emit(
+[src\renderer\game\navigation\PathFinder.js:302] this.eventBus?.emit(
+[src\renderer\game\navigation\PathFinder.js:354] this.eventBus = null
+[src\renderer\game\navigation\Waypoints.js:10] constructor(eventBus = null) {
+[src\renderer\game\navigation\Waypoints.js:12] this.eventBus = eventBus
+[src\renderer\game\navigation\Waypoints.js:43] this.eventBus?.emit('waypoints:added', {
+[src\renderer\game\navigation\Waypoints.js:59] this.eventBus?.emit('waypoints:removed', {
+[src\renderer\game\navigation\Waypoints.js:108] this.eventBus?.emit('waypoints:moved', {
+[src\renderer\game\navigation\Waypoints.js:347] this.eventBus = null
+[src\renderer\game\scenes\HiveScene.js:16] eventBus = null
+[src\renderer\game\scenes\HiveScene.js:44] this.eventBus = eventBus
+[src\renderer\game\scenes\HiveScene.js:138] eventBus: this.eventBus
+[src\renderer\game\scenes\HiveScene.js:226] this.eventBus = null
+[src\renderer\game\systems\AccessibilitySystem.js:61] eventBus = null,
+[src\renderer\game\systems\AccessibilitySystem.js:69] eventBus !== null &&
+[src\renderer\game\systems\AccessibilitySystem.js:70] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\AccessibilitySystem.js:73] '[AccessibilitySystem] EventBus должен поддерживать emit().'
+[src\renderer\game\systems\AccessibilitySystem.js:95] this.eventBus = eventBus
+[src\renderer\game\systems\AccessibilitySystem.js:135] this.emit('accessibility:initialized', {
+[src\renderer\game\systems\AccessibilitySystem.js:183] this.emit('accessibility:setting-changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:190] this.emit('accessibility:changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:236] this.emit('accessibility:changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:256] this.emit('accessibility:reset', {
+[src\renderer\game\systems\AccessibilitySystem.js:261] this.emit('accessibility:changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:297] this.emit('accessibility:root-changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:406] this.emit('accessibility:applied', {
+[src\renderer\game\systems\AccessibilitySystem.js:438] this.emit('accessibility:enabled-changed', {
+[src\renderer\game\systems\AccessibilitySystem.js:724] !this.eventBus ||
+[src\renderer\game\systems\AccessibilitySystem.js:731] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\AccessibilitySystem.js:759] this.emit('accessibility:destroyed')
+[src\renderer\game\systems\AccessibilitySystem.js:761] this.eventBus = null
+[src\renderer\game\systems\AnimationSystem.js:13] eventBus = null,
+[src\renderer\game\systems\AnimationSystem.js:18] eventBus !== null &&
+[src\renderer\game\systems\AnimationSystem.js:20] typeof eventBus.on !== 'function' ||
+[src\renderer\game\systems\AnimationSystem.js:21] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\AnimationSystem.js:24] throw new TypeError('AnimationSystem: некорректный EventBus.')
+[src\renderer\game\systems\AnimationSystem.js:27] this.eventBus = eventBus
+[src\renderer\game\systems\AnimationSystem.js:193] this.emit('animation:started', {
+[src\renderer\game\systems\AnimationSystem.js:401] this.emit('animation:repeat', {
+[src\renderer\game\systems\AnimationSystem.js:456] this.emit('animation:updated', {
+[src\renderer\game\systems\AnimationSystem.js:485] this.emit('animation:completed', {
+[src\renderer\game\systems\AnimationSystem.js:510] this.emit('animation:cancelled', {
+[src\renderer\game\systems\AnimationSystem.js:568] this.emit('animation:paused', {
+[src\renderer\game\systems\AnimationSystem.js:584] this.emit('animation:resumed', {
+[src\renderer\game\systems\AnimationSystem.js:598] this.emit('animation:all-paused', {})
+[src\renderer\game\systems\AnimationSystem.js:608] this.emit('animation:all-resumed', {})
+[src\renderer\game\systems\AnimationSystem.js:716] this.emit('animation:enabled-changed', {
+[src\renderer\game\systems\AnimationSystem.js:724] if (this.eventBus) {
+[src\renderer\game\systems\AnimationSystem.js:725] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\AnimationSystem.js:746] this.eventBus = null
+[src\renderer\game\systems\AudioSystem.js:20] eventBus = null,
+[src\renderer\game\systems\AudioSystem.js:28] eventBus !== null &&
+[src\renderer\game\systems\AudioSystem.js:29] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\AudioSystem.js:32] '[AudioSystem] Некорректный EventBus.'
+[src\renderer\game\systems\AudioSystem.js:54] this.eventBus = eventBus
+[src\renderer\game\systems\AudioSystem.js:158] this.emit('audio:sound-registered', {
+[src\renderer\game\systems\AudioSystem.js:195] audio.removeEventListener(
+[src\renderer\game\systems\AudioSystem.js:200] audio.removeEventListener(
+[src\renderer\game\systems\AudioSystem.js:221] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:227] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:236] this.emit('audio:sound-loaded', {
+[src\renderer\game\systems\AudioSystem.js:249] this.emit('audio:load-error', {
+[src\renderer\game\systems\AudioSystem.js:334] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:340] audio.addEventListener(
+[src\renderer\game\systems\AudioSystem.js:362] this.emit('audio:playback-started', {
+[src\renderer\game\systems\AudioSystem.js:376] this.emit('audio:playback-error', {
+[src\renderer\game\systems\AudioSystem.js:436] this.emit('audio:playback-stopped', {
+[src\renderer\game\systems\AudioSystem.js:478] this.emit('audio:channel-stopped', {
+[src\renderer\game\systems\AudioSystem.js:519] this.emit('audio:playback-paused', {
+[src\renderer\game\systems\AudioSystem.js:546] this.emit('audio:playback-resumed', {
+[src\renderer\game\systems\AudioSystem.js:555] this.emit('audio:playback-error', {
+[src\renderer\game\systems\AudioSystem.js:584] this.emit('audio:paused')
+[src\renderer\game\systems\AudioSystem.js:613] this.emit('audio:resumed')
+[src\renderer\game\systems\AudioSystem.js:631] this.emit('audio:master-volume-changed', {
+[src\renderer\game\systems\AudioSystem.js:660] this.emit('audio:channel-volume-changed', {
+[src\renderer\game\systems\AudioSystem.js:716] this.emit('audio:mute-changed', {
+[src\renderer\game\systems\AudioSystem.js:785] this.emit('audio:playback-ended', {
+[src\renderer\game\systems\AudioSystem.js:803] this.emit('audio:playback-error', {
+[src\renderer\game\systems\AudioSystem.js:852] this.emit('audio:sound-unregistered', {
+[src\renderer\game\systems\AudioSystem.js:986] if (!this.eventBus) {
+[src\renderer\game\systems\AudioSystem.js:990] return this.eventBus.emit(
+[src\renderer\game\systems\AudioSystem.js:1008] this.emit('audio:destroyed')
+[src\renderer\game\systems\AudioSystem.js:1017] this.eventBus = null
+[src\renderer\game\systems\DialogueSystem.js:12] eventBus = null
+[src\renderer\game\systems\DialogueSystem.js:16] eventBus !== null &&
+[src\renderer\game\systems\DialogueSystem.js:17] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\DialogueSystem.js:20] 'DialogueSystem: eventBus должен поддерживать emit().'
+[src\renderer\game\systems\DialogueSystem.js:24] this.eventBus = eventBus
+[src\renderer\game\systems\DialogueSystem.js:287] this.emit('dialogue:registered', {
+[src\renderer\game\systems\DialogueSystem.js:318] this.emit('dialogue:unregistered', {
+[src\renderer\game\systems\DialogueSystem.js:370] this.emit('dialogue:started', {
+[src\renderer\game\systems\DialogueSystem.js:407] this.emit('dialogue:node', {
+[src\renderer\game\systems\DialogueSystem.js:518] this.emit('dialogue:choice', {
+[src\renderer\game\systems\DialogueSystem.js:527] this.emit('dialogue:action', {
+[src\renderer\game\systems\DialogueSystem.js:575] this.emit('dialogue:transition', {
+[src\renderer\game\systems\DialogueSystem.js:612] this.emit('dialogue:context-updated', {
+[src\renderer\game\systems\DialogueSystem.js:642] this.emit('dialogue:paused', {
+[src\renderer\game\systems\DialogueSystem.js:664] this.emit('dialogue:resumed', {
+[src\renderer\game\systems\DialogueSystem.js:692] this.emit('dialogue:completed', {
+[src\renderer\game\systems\DialogueSystem.js:722] this.emit('dialogue:closed', {
+[src\renderer\game\systems\DialogueSystem.js:819] if (!this.eventBus || this.destroyed) {
+[src\renderer\game\systems\DialogueSystem.js:824] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\DialogueSystem.js:870] this.eventBus = null
+[src\renderer\game\systems\GameFlowSystem.js:11] constructor({ eventBus = null } = {}) {
+[src\renderer\game\systems\GameFlowSystem.js:14] eventBus !== null &&
+[src\renderer\game\systems\GameFlowSystem.js:15] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\GameFlowSystem.js:18] 'GameFlowSystem: eventBus должен поддерживать emit().'
+[src\renderer\game\systems\GameFlowSystem.js:22] this.eventBus = eventBus
+[src\renderer\game\systems\GameFlowSystem.js:218] this.emit('flow:scenario-registered', {
+[src\renderer\game\systems\GameFlowSystem.js:248] this.emit('flow:scenario-unregistered', {
+[src\renderer\game\systems\GameFlowSystem.js:302] this.emit('flow:started', {
+[src\renderer\game\systems\GameFlowSystem.js:352] this.emit('flow:stage-started', {
+[src\renderer\game\systems\GameFlowSystem.js:419] this.emit('flow:attempt-recorded', {
+[src\renderer\game\systems\GameFlowSystem.js:433] this.emit('flow:max-attempts-reached', {
+[src\renderer\game\systems\GameFlowSystem.js:499] this.emit('flow:stage-completed', {
+[src\renderer\game\systems\GameFlowSystem.js:558] this.emit('flow:transition', {
+[src\renderer\game\systems\GameFlowSystem.js:643] this.emit('flow:stage-retried', {
+[src\renderer\game\systems\GameFlowSystem.js:678] this.emit('flow:context-updated', {
+[src\renderer\game\systems\GameFlowSystem.js:708] this.emit('flow:paused', {
+[src\renderer\game\systems\GameFlowSystem.js:726] this.emit('flow:resumed', {
+[src\renderer\game\systems\GameFlowSystem.js:754] this.emit('flow:completed', {
+[src\renderer\game\systems\GameFlowSystem.js:785] this.emit('flow:stopped', {
+[src\renderer\game\systems\GameFlowSystem.js:904] if (!this.eventBus || this.destroyed) {
+[src\renderer\game\systems\GameFlowSystem.js:909] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\GameFlowSystem.js:956] this.eventBus = null
+[src\renderer\game\systems\InputSystem.js:14] eventBus = null,
+[src\renderer\game\systems\InputSystem.js:18] if (!target || typeof target.addEventListener !== 'function') {
+[src\renderer\game\systems\InputSystem.js:19] throw new TypeError('InputSystem: target должен поддерживать addEventListener.')
+[src\renderer\game\systems\InputSystem.js:24] typeof pointerTarget.addEventListener !== 'function'
+[src\renderer\game\systems\InputSystem.js:38] this.eventBus = eventBus
+[src\renderer\game\systems\InputSystem.js:64] this.target.addEventListener('keydown', this.handleKeyDown)
+[src\renderer\game\systems\InputSystem.js:65] this.target.addEventListener('keyup', this.handleKeyUp)
+[src\renderer\game\systems\InputSystem.js:66] this.target.addEventListener('blur', this.handleBlur)
+[src\renderer\game\systems\InputSystem.js:69] this.pointerTarget.addEventListener('pointerdown', this.handlePointerDown)
+[src\renderer\game\systems\InputSystem.js:70] this.pointerTarget.addEventListener('pointermove', this.handlePointerMove)
+[src\renderer\game\systems\InputSystem.js:71] this.pointerTarget.addEventListener('pointerup', this.handlePointerUp)
+[src\renderer\game\systems\InputSystem.js:72] this.pointerTarget.addEventListener('pointercancel', this.handlePointerCancel)
+[src\renderer\game\systems\InputSystem.js:77] this.emit('input:attached', {})
+[src\renderer\game\systems\InputSystem.js:85] this.target.removeEventListener('keydown', this.handleKeyDown)
+[src\renderer\game\systems\InputSystem.js:86] this.target.removeEventListener('keyup', this.handleKeyUp)
+[src\renderer\game\systems\InputSystem.js:87] this.target.removeEventListener('blur', this.handleBlur)
+[src\renderer\game\systems\InputSystem.js:90] this.pointerTarget.removeEventListener('pointerdown', this.handlePointerDown)
+[src\renderer\game\systems\InputSystem.js:91] this.pointerTarget.removeEventListener('pointermove', this.handlePointerMove)
+[src\renderer\game\systems\InputSystem.js:92] this.pointerTarget.removeEventListener('pointerup', this.handlePointerUp)
+[src\renderer\game\systems\InputSystem.js:93] this.pointerTarget.removeEventListener('pointercancel', this.handlePointerCancel)
+[src\renderer\game\systems\InputSystem.js:101] this.emit('input:detached', {})
+[src\renderer\game\systems\InputSystem.js:120] this.emit('input:key-down', {
+[src\renderer\game\systems\InputSystem.js:135] this.emit('input:key-up', {
+[src\renderer\game\systems\InputSystem.js:150] this.emit('input:key-up', {
+[src\renderer\game\systems\InputSystem.js:157] this.emit('input:reset', {
+[src\renderer\game\systems\InputSystem.js:214] this.emit(eventName, pointer)
+[src\renderer\game\systems\InputSystem.js:256] this.emit('input:enabled-changed', { enabled })
+[src\renderer\game\systems\InputSystem.js:262] if (this.eventBus && typeof this.eventBus.emit === 'function') {
+[src\renderer\game\systems\InputSystem.js:263] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\InputSystem.js:283] this.eventBus = null
+[src\renderer\game\systems\InteractionSystem.js:14] eventBus = null,
+[src\renderer\game\systems\InteractionSystem.js:38] const sharedEventBus = eventBus || inputSystem.eventBus
+[src\renderer\game\systems\InteractionSystem.js:41] !sharedEventBus ||
+[src\renderer\game\systems\InteractionSystem.js:42] typeof sharedEventBus.on !== 'function' ||
+[src\renderer\game\systems\InteractionSystem.js:43] typeof sharedEventBus.off !== 'function' ||
+[src\renderer\game\systems\InteractionSystem.js:44] typeof sharedEventBus.emit !== 'function'
+[src\renderer\game\systems\InteractionSystem.js:46] throw new TypeError('InteractionSystem: требуется общий EventBus.')
+[src\renderer\game\systems\InteractionSystem.js:50] inputSystem.eventBus &&
+[src\renderer\game\systems\InteractionSystem.js:51] inputSystem.eventBus !== sharedEventBus
+[src\renderer\game\systems\InteractionSystem.js:53] throw new Error('InteractionSystem: InputSystem и InteractionSystem должны использовать один EventBus.')
+[src\renderer\game\systems\InteractionSystem.js:67] this.eventBus = sharedEventBus
+[src\renderer\game\systems\InteractionSystem.js:102] this.eventBus.on('input:pointer-down', this.handlePointerDown)
+[src\renderer\game\systems\InteractionSystem.js:103] this.eventBus.on('input:pointer-move', this.handlePointerMove)
+[src\renderer\game\systems\InteractionSystem.js:104] this.eventBus.on('input:pointer-up', this.handlePointerUp)
+[src\renderer\game\systems\InteractionSystem.js:105] this.eventBus.on('input:pointer-cancel', this.handlePointerCancel)
+[src\renderer\game\systems\InteractionSystem.js:107] this.eventBus.on('input:reset', this.handleInputReset)
+[src\renderer\game\systems\InteractionSystem.js:108] this.eventBus.on('input:detached', this.handleInputDetached)
+[src\renderer\game\systems\InteractionSystem.js:112] this.emit('interaction:attached', {})
+[src\renderer\game\systems\InteractionSystem.js:120] this.eventBus.off('input:pointer-down', this.handlePointerDown)
+[src\renderer\game\systems\InteractionSystem.js:121] this.eventBus.off('input:pointer-move', this.handlePointerMove)
+[src\renderer\game\systems\InteractionSystem.js:122] this.eventBus.off('input:pointer-up', this.handlePointerUp)
+[src\renderer\game\systems\InteractionSystem.js:123] this.eventBus.off('input:pointer-cancel', this.handlePointerCancel)
+[src\renderer\game\systems\InteractionSystem.js:125] this.eventBus.off('input:reset', this.handleInputReset)
+[src\renderer\game\systems\InteractionSystem.js:126] this.eventBus.off('input:detached', this.handleInputDetached)
+[src\renderer\game\systems\InteractionSystem.js:133] this.emit('interaction:detached', {})
+[src\renderer\game\systems\InteractionSystem.js:208] this.emit('interaction:entity-registered', {
+[src\renderer\game\systems\InteractionSystem.js:242] this.emit('interaction:entity-unregistered', {
+[src\renderer\game\systems\InteractionSystem.js:418] this.emit('interaction:empty-press', {
+[src\renderer\game\systems\InteractionSystem.js:428] this.emit('interaction:pointer-down', {
+[src\renderer\game\systems\InteractionSystem.js:472] this.emit('interaction:drag-start', {
+[src\renderer\game\systems\InteractionSystem.js:491] this.emit('interaction:drag', {
+[src\renderer\game\systems\InteractionSystem.js:526] this.emit('interaction:drag-end', {
+[src\renderer\game\systems\InteractionSystem.js:549] this.emit('interaction:click', {
+[src\renderer\game\systems\InteractionSystem.js:558] this.emit('interaction:pointer-up', {
+[src\renderer\game\systems\InteractionSystem.js:589] this.emit('interaction:drag-cancel', {
+[src\renderer\game\systems\InteractionSystem.js:631] this.emit('interaction:pointer-out', {
+[src\renderer\game\systems\InteractionSystem.js:644] this.emit('interaction:pointer-over', {
+[src\renderer\game\systems\InteractionSystem.js:681] this.emit('interaction:selection-changed', {
+[src\renderer\game\systems\InteractionSystem.js:717] this.emit('interaction:enabled-changed', {
+[src\renderer\game\systems\InteractionSystem.js:725] if (this.eventBus) {
+[src\renderer\game\systems\InteractionSystem.js:726] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\InteractionSystem.js:753] this.eventBus = null
+[src\renderer\game\systems\PerformanceSystem.js:36] eventBus = null,
+[src\renderer\game\systems\PerformanceSystem.js:41] eventBus !== null &&
+[src\renderer\game\systems\PerformanceSystem.js:42] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\PerformanceSystem.js:45] '[PerformanceSystem] EventBus должен поддерживать emit().'
+[src\renderer\game\systems\PerformanceSystem.js:51] this.eventBus = eventBus
+[src\renderer\game\systems\PerformanceSystem.js:116] this.emit('performance:initialized', {
+[src\renderer\game\systems\PerformanceSystem.js:232] this.emit('performance:sample', sample)
+[src\renderer\game\systems\PerformanceSystem.js:339] this.emit('performance:systems-reset')
+[src\renderer\game\systems\PerformanceSystem.js:483] this.emit('performance:quality-recommended', {
+[src\renderer\game\systems\PerformanceSystem.js:511] this.emit('performance:quality-changed', {
+[src\renderer\game\systems\PerformanceSystem.js:665] this.emit('performance:target-fps-changed', {
+[src\renderer\game\systems\PerformanceSystem.js:689] this.emit('performance:adaptive-quality-changed', {
+[src\renderer\game\systems\PerformanceSystem.js:715] this.emit('performance:enabled-changed', {
+[src\renderer\game\systems\PerformanceSystem.js:731] this.emit('performance:paused')
+[src\renderer\game\systems\PerformanceSystem.js:745] this.emit('performance:resumed')
+[src\renderer\game\systems\PerformanceSystem.js:787] this.emit('performance:stats-reset')
+[src\renderer\game\systems\PerformanceSystem.js:799] this.emit('performance:metrics', stats)
+[src\renderer\game\systems\PerformanceSystem.js:811] this.emit('performance:warning', {
+[src\renderer\game\systems\PerformanceSystem.js:818] this.emit('performance:recovered', {
+[src\renderer\game\systems\PerformanceSystem.js:976] if (!this.eventBus || this.destroyed) {
+[src\renderer\game\systems\PerformanceSystem.js:981] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\PerformanceSystem.js:999] this.emit('performance:destroyed')
+[src\renderer\game\systems\PerformanceSystem.js:1012] this.eventBus = null
+[src\renderer\game\systems\PhysicsSystem.js:13] eventBus = null,
+[src\renderer\game\systems\PhysicsSystem.js:30] eventBus !== null &&
+[src\renderer\game\systems\PhysicsSystem.js:31] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\PhysicsSystem.js:34] '[PhysicsSystem] Некорректный EventBus.'
+[src\renderer\game\systems\PhysicsSystem.js:39] this.eventBus = eventBus
+[src\renderer\game\systems\PhysicsSystem.js:249] this.emit('physics:body-added', {
+[src\renderer\game\systems\PhysicsSystem.js:274] this.emit('physics:body-removed', {
+[src\renderer\game\systems\PhysicsSystem.js:778] this.emit('physics:collision-start', {
+[src\renderer\game\systems\PhysicsSystem.js:787] this.emit('physics:collision-stay', {
+[src\renderer\game\systems\PhysicsSystem.js:798] this.emit('physics:collision-end', {
+[src\renderer\game\systems\PhysicsSystem.js:817] this.emit('physics:collision-end', {
+[src\renderer\game\systems\PhysicsSystem.js:888] this.emit('physics:boundary-hit', {
+[src\renderer\game\systems\PhysicsSystem.js:966] if (!this.eventBus) {
+[src\renderer\game\systems\PhysicsSystem.js:970] return this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\PhysicsSystem.js:982] this.emit('physics:gravity-changed', {
+[src\renderer\game\systems\PhysicsSystem.js:1001] this.emit('physics:enabled-changed', {
+[src\renderer\game\systems\PhysicsSystem.js:1038] this.emit('physics:collision-end', {
+[src\renderer\game\systems\PhysicsSystem.js:1044] this.emit('physics:destroyed')
+[src\renderer\game\systems\PhysicsSystem.js:1051] this.eventBus = null
+[src\renderer\game\systems\RenderingSystem.js:16] eventBus = null,
+[src\renderer\game\systems\RenderingSystem.js:42] eventBus !== null &&
+[src\renderer\game\systems\RenderingSystem.js:43] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\RenderingSystem.js:46] '[RenderingSystem] Некорректный EventBus.'
+[src\renderer\game\systems\RenderingSystem.js:56] this.eventBus = eventBus
+[src\renderer\game\systems\RenderingSystem.js:124] window.addEventListener(
+[src\renderer\game\systems\RenderingSystem.js:144] document.addEventListener(
+[src\renderer\game\systems\RenderingSystem.js:152] this.emit('rendering:initialized', {
+[src\renderer\game\systems\RenderingSystem.js:252] this.emit('rendering:frame', {
+[src\renderer\game\systems\RenderingSystem.js:263] this.emit('rendering:error', {
+[src\renderer\game\systems\RenderingSystem.js:340] this.emit('rendering:resize', {
+[src\renderer\game\systems\RenderingSystem.js:385] this.emit('rendering:paused')
+[src\renderer\game\systems\RenderingSystem.js:401] this.emit('rendering:resumed')
+[src\renderer\game\systems\RenderingSystem.js:422] this.emit('rendering:enabled-changed', {
+[src\renderer\game\systems\RenderingSystem.js:471] this.emit('rendering:fps-changed', {
+[src\renderer\game\systems\RenderingSystem.js:513] this.emit('rendering:stats-reset')
+[src\renderer\game\systems\RenderingSystem.js:524] if (!this.eventBus) {
+[src\renderer\game\systems\RenderingSystem.js:528] return this.eventBus.emit(
+[src\renderer\game\systems\RenderingSystem.js:564] window.removeEventListener(
+[src\renderer\game\systems\RenderingSystem.js:569] document.removeEventListener(
+[src\renderer\game\systems\RenderingSystem.js:575] this.emit('rendering:destroyed')
+[src\renderer\game\systems\RenderingSystem.js:586] this.eventBus = null
+[src\renderer\game\systems\SaveSystem.js:17] eventBus = null,
+[src\renderer\game\systems\SaveSystem.js:40] eventBus !== null &&
+[src\renderer\game\systems\SaveSystem.js:41] typeof eventBus.emit !== 'function'
+[src\renderer\game\systems\SaveSystem.js:44] 'SaveSystem: eventBus должен поддерживать emit().'
+[src\renderer\game\systems\SaveSystem.js:62] this.eventBus = eventBus
+[src\renderer\game\systems\SaveSystem.js:143] this.emit('save:completed', {
+[src\renderer\game\systems\SaveSystem.js:170] this.emit('save:not-found', {
+[src\renderer\game\systems\SaveSystem.js:187] this.emit('save:invalid', {
+[src\renderer\game\systems\SaveSystem.js:204] this.emit('save:loaded', {
+[src\renderer\game\systems\SaveSystem.js:240] this.emit('save:deleted', {
+[src\renderer\game\systems\SaveSystem.js:368] this.emit('save:imported', {
+[src\renderer\game\systems\SaveSystem.js:416] this.emit('save:renamed', {
+[src\renderer\game\systems\SaveSystem.js:434] this.emit('save:cleared', {})
+[src\renderer\game\systems\SaveSystem.js:675] if (!this.eventBus || this.destroyed) {
+[src\renderer\game\systems\SaveSystem.js:680] this.eventBus.emit(eventName, payload)
+[src\renderer\game\systems\SaveSystem.js:712] this.emit('save:destroyed')
+[src\renderer\game\systems\SaveSystem.js:715] this.eventBus = null
+[src\renderer\game\ui\DialogWindow.js:46] eventBus = null,
+[src\renderer\game\ui\DialogWindow.js:57] this.eventBus = eventBus
+[src\renderer\game\ui\DialogWindow.js:140] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\DialogWindow.js:143] this.emit('dialog:initialized', this.getState())
+[src\renderer\game\ui\DialogWindow.js:442] button.on('pointertap', () => {
+[src\renderer\game\ui\DialogWindow.js:447] button.on('pointerover', () => {
+[src\renderer\game\ui\DialogWindow.js:452] button.on('pointerout', () => {
+[src\renderer\game\ui\DialogWindow.js:514] this.emit('dialog:shown', this.getState())
+[src\renderer\game\ui\DialogWindow.js:642] this.emit('dialog:choice', {
+[src\renderer\game\ui\DialogWindow.js:661] this.emit('dialog:next', this.getState())
+[src\renderer\game\ui\DialogWindow.js:686] this.emit('dialog:text-changed', { text })
+[src\renderer\game\ui\DialogWindow.js:844] this.emit('dialog:opened', this.getState())
+[src\renderer\game\ui\DialogWindow.js:855] this.emit('dialog:closed', {})
+[src\renderer\game\ui\DialogWindow.js:899] if (!this.eventBus) return false
+[src\renderer\game\ui\DialogWindow.js:902] this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\DialogWindow.js:940] window.removeEventListener(
+[src\renderer\game\ui\DialogWindow.js:972] this.eventBus = null
+[src\renderer\game\ui\GameHUD.js:40] eventBus = null,
+[src\renderer\game\ui\GameHUD.js:51] this.eventBus = eventBus
+[src\renderer\game\ui\GameHUD.js:129] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\GameHUD.js:132] this.emit('hud:initialized', this.getState())
+[src\renderer\game\ui\GameHUD.js:400] button.on('pointertap', () => {
+[src\renderer\game\ui\GameHUD.js:408] button.on('pointerover', () => {
+[src\renderer\game\ui\GameHUD.js:414] button.on('pointerout', () => {
+[src\renderer\game\ui\GameHUD.js:426] this.emit('hud:hint-requested', this.getState())
+[src\renderer\game\ui\GameHUD.js:435] this.emit('hud:exit-requested', this.getState())
+[src\renderer\game\ui\GameHUD.js:449] this.emit('hud:profile-changed', {
+[src\renderer\game\ui\GameHUD.js:462] this.emit('hud:stage-changed', {
+[src\renderer\game\ui\GameHUD.js:494] this.emit('hud:progress-display-changed', {
+[src\renderer\game\ui\GameHUD.js:552] this.emit('hud:honey-changed', {
+[src\renderer\game\ui\GameHUD.js:639] this.emit('hud:shown', this.getState())
+[src\renderer\game\ui\GameHUD.js:649] this.emit('hud:hidden', this.getState())
+[src\renderer\game\ui\GameHUD.js:687] if (!this.eventBus) return false
+[src\renderer\game\ui\GameHUD.js:690] this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\GameHUD.js:728] window.removeEventListener('resize', this.handleResize)
+[src\renderer\game\ui\GameHUD.js:753] this.eventBus = null
+[src\renderer\game\ui\Inventory.js:40] eventBus = null,
+[src\renderer\game\ui\Inventory.js:48] this.eventBus = eventBus
+[src\renderer\game\ui\Inventory.js:116] window.addEventListener('resize', this.handleResize)
+[src\renderer\game\ui\Inventory.js:119] this.emit('inventory:initialized', this.getState())
+[src\renderer\game\ui\Inventory.js:271] this.emit('inventory:item-added', {
+[src\renderer\game\ui\Inventory.js:309] this.emit('inventory:item-removed', {
+[src\renderer\game\ui\Inventory.js:355] this.emit('inventory:cleared', {})
+[src\renderer\game\ui\Inventory.js:558] cell.on('pointertap', () => {
+[src\renderer\game\ui\Inventory.js:563] cell.on('pointerover', () => {
+[src\renderer\game\ui\Inventory.js:567] cell.on('pointerout', () => {
+[src\renderer\game\ui\Inventory.js:592] this.emit('inventory:item-selected', {
+[src\renderer\game\ui\Inventory.js:704] button.on('pointertap', () => {
+[src\renderer\game\ui\Inventory.js:709] button.on('pointerover', () => {
+[src\renderer\game\ui\Inventory.js:713] button.on('pointerout', () => {
+[src\renderer\game\ui\Inventory.js:729] this.emit('inventory:shown', this.getState())
+[src\renderer\game\ui\Inventory.js:739] this.emit('inventory:closed', {})
+[src\renderer\game\ui\Inventory.js:796] if (!this.eventBus) return false
+[src\renderer\game\ui\Inventory.js:799] this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\Inventory.js:847] window.removeEventListener('resize', this.handleResize)
+[src\renderer\game\ui\Inventory.js:872] this.eventBus = null
+[src\renderer\game\ui\UIComponent.js:7] eventBus = null,
+[src\renderer\game\ui\UIComponent.js:24] eventBus !== null &&
+[src\renderer\game\ui\UIComponent.js:25] typeof eventBus.emit !== 'function'
+[src\renderer\game\ui\UIComponent.js:28] '[UIComponent] eventBus должен поддерживать emit().'
+[src\renderer\game\ui\UIComponent.js:50] this.eventBus = eventBus
+[src\renderer\game\ui\UIComponent.js:96] this.emit('ui:component-initialized', {
+[src\renderer\game\ui\UIComponent.js:174] this.emit('ui:component-moved', {
+[src\renderer\game\ui\UIComponent.js:194] this.emit('ui:component-resized', {
+[src\renderer\game\ui\UIComponent.js:213] this.emit('ui:component-visibility-changed', {
+[src\renderer\game\ui\UIComponent.js:232] this.emit('ui:component-enabled-changed', {
+[src\renderer\game\ui\UIComponent.js:395] if (!this.eventBus) {
+[src\renderer\game\ui\UIComponent.js:399] return this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\UIComponent.js:424] this.emit('ui:component-destroyed', {
+[src\renderer\game\ui\UIComponent.js:435] this.eventBus = null
+[src\renderer\game\ui\UIManager.js:21] eventBus = null,
+[src\renderer\game\ui\UIManager.js:50] eventBus !== null &&
+[src\renderer\game\ui\UIManager.js:51] typeof eventBus.emit !== 'function'
+[src\renderer\game\ui\UIManager.js:54] '[UIManager] eventBus должен поддерживать emit().'
+[src\renderer\game\ui\UIManager.js:59] this.eventBus = eventBus
+[src\renderer\game\ui\UIManager.js:113] this.emit('ui:initialized', {
+[src\renderer\game\ui\UIManager.js:245] this.emit('ui:component-added', {
+[src\renderer\game\ui\UIManager.js:286] this.emit('ui:component-removed', {
+[src\renderer\game\ui\UIManager.js:329] this.emit('ui:visibility-changed', {
+[src\renderer\game\ui\UIManager.js:348] this.emit('ui:layer-visibility-changed', {
+[src\renderer\game\ui\UIManager.js:362] this.emit('ui:enabled-changed', {
+[src\renderer\game\ui\UIManager.js:420] this.emit('ui:resized', viewport)
+[src\renderer\game\ui\UIManager.js:453] this.emit('ui:component-error', {
+[src\renderer\game\ui\UIManager.js:492] if (!this.eventBus) {
+[src\renderer\game\ui\UIManager.js:496] return this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\UIManager.js:539] this.eventBus = null
+[src\renderer\game\ui\widgets\Button.js:19] eventBus = null,
+[src\renderer\game\ui\widgets\Button.js:52] eventBus,
+[src\renderer\game\ui\widgets\Button.js:254] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:259] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:264] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:269] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:274] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:279] this.container.on(
+[src\renderer\game\ui\widgets\Button.js:294] this.emit('ui:button-hover', {
+[src\renderer\game\ui\widgets\Button.js:310] this.emit('ui:button-out', {
+[src\renderer\game\ui\widgets\Button.js:324] this.emit('ui:button-pressed', {
+[src\renderer\game\ui\widgets\Button.js:339] this.emit('ui:button-released', {
+[src\renderer\game\ui\widgets\Button.js:359] this.emit('ui:button-clicked', {
+[src\renderer\game\ui\widgets\Button.js:379] this.emit('ui:button-error', {
+[src\renderer\game\ui\widgets\Button.js:480] this.container.off(
+[src\renderer\game\ui\widgets\Button.js:485] this.container.off(
+[src\renderer\game\ui\widgets\Button.js:490] this.container.off(
+[src\renderer\game\ui\widgets\Button.js:495] this.container.off(
+[src\renderer\game\ui\widgets\Button.js:500] this.container.off(
+[src\renderer\game\ui\widgets\Button.js:505] this.container.off(
+[src\renderer\game\ui\widgets\Panel.js:78] eventBus = null,
+[src\renderer\game\ui\widgets\Panel.js:84] eventBus
+[src\renderer\game\ui\widgets\Panel.js:140] this.emit('panel:initialized', this.getState())
+[src\renderer\game\ui\widgets\Panel.js:362] this.emit('panel:content-added', {
+[src\renderer\game\ui\widgets\Panel.js:385] this.emit('panel:content-removed', {
+[src\renderer\game\ui\widgets\Panel.js:444] this.emit('panel:title-changed', {
+[src\renderer\game\ui\widgets\Panel.js:504] this.emit('panel:variant-changed', {
+[src\renderer\game\ui\widgets\Panel.js:522] this.emit('panel:resized', {
+[src\renderer\game\ui\widgets\Panel.js:539] this.emit('panel:padding-changed', {
+[src\renderer\game\ui\widgets\Panel.js:583] if (!this.eventBus) return false
+[src\renderer\game\ui\widgets\Panel.js:586] this.eventBus.emit(eventName, payload)
+[src\renderer\game\ui\widgets\ProgressBar.js:10] eventBus = null,
+[src\renderer\game\ui\widgets\ProgressBar.js:94] eventBus,
+[src\renderer\game\ui\widgets\ProgressBar.js:399] this.emit('ui:progress-changed', {
+[src\renderer\game\world\WorldMap.js:9] constructor(eventBus = null) {
+[src\renderer\game\world\WorldMap.js:11] this.eventBus = eventBus
+[src\renderer\game\world\WorldMap.js:46] this.eventBus?.emit('world:zone-added', {
+[src\renderer\game\world\WorldMap.js:82] this.eventBus?.emit('world:current-zone-changed', {
+[src\renderer\game\world\WorldMap.js:88] this.eventBus?.emit('world:zone-removed', {
+[src\renderer\game\world\WorldMap.js:214] this.eventBus?.emit('world:zones-connected', {
+[src\renderer\game\world\WorldMap.js:245] this.eventBus?.emit('world:zones-disconnected', {
+[src\renderer\game\world\WorldMap.js:309] this.eventBus?.emit('world:current-zone-changed', {
+[src\renderer\game\world\WorldMap.js:445] this.eventBus = null
+Всего совпадений: 509
+
+==============================================================================
+7. LESSON / EXERCISE / PROGRESS CONNECTIONS
+==============================================================================
+[electron\main.js:5] const RuntimeModule = require('../src/core/SayloRuntime')
+[electron\main.js:6] const SayloRuntime =
+[electron\main.js:7] RuntimeModule.SayloRuntime ||
+[electron\main.js:38] const sayloRuntime = new SayloRuntime()
+[electron\main.js:40] let sayloRuntimeStatus = {
+[electron\main.js:45] sayloRuntimeStatus = await sayloRuntime.initialize()
+[electron\main.js:49] sayloRuntimeStatus
+[electron\main.js:52] sayloRuntimeStatus = {
+[electron\main.js:88] 'saylo:start-lesson': 'startLesson',
+[electron\main.js:90] 'saylo:record-attempt': 'recordAttempt',
+[electron\main.js:91] 'saylo:record-stage-completion': 'recordStageCompletion',
+[electron\main.js:92] 'saylo:get-current-progress': 'getCurrentProgress',
+[electron\main.js:94] 'saylo:finish-lesson': 'finishLesson',
+[electron\main.js:126] sayloRuntimeStatus.status !== 'initialized'
+[electron\main.js:128] return sayloRuntimeStatus
+[electron\main.js:131] if (sayloRuntimeStatus.status !== 'initialized') {
+[electron\main.js:135] sayloRuntimeStatus.message ||
+[electron\main.js:141] return await sayloRuntime[method](...args)
+[electron\preload\preload.js:76] startLesson: (options) =>
+[electron\preload\preload.js:85] recordAttempt: (data) =>
+[electron\preload\preload.js:91] recordStageCompletion: (data) =>
+[electron\preload\preload.js:97] getCurrentProgress: (...args) =>
+[electron\preload\preload.js:109] finishLesson: (...args) =>
+[src\core\exercise\ExerciseEngine.js:4] class ExerciseEngine {
+[src\core\exercise\ExerciseEngine.js:263] if (stage.specialist_support && !progress.specialistConfirmed) {
+[src\core\exercise\ExerciseEngine.js:277] if (progress.reviewRequired) {
+[src\core\exercise\ExerciseEngine.js:292] throw new Error('Сначала вызовите ExerciseEngine.load().')
+[src\core\exercise\ExerciseEngine.js:297] module.exports = { ExerciseEngine }
+[src\core\exercise\PersonalizedTrainingEngine.js:1] const { ExerciseEngine } = require('./ExerciseEngine')
+[src\core\exercise\PersonalizedTrainingEngine.js:10] this.exerciseEngine = options.exerciseEngine ||
+[src\core\exercise\PersonalizedTrainingEngine.js:11] new ExerciseEngine(projectRoot)
+[src\core\exercise\PersonalizedTrainingEngine.js:20] // из центрального SayloRuntime.
+[src\core\exercise\PersonalizedTrainingEngine.js:34] const exerciseStatus = this.exerciseEngine.load()
+[src\core\exercise\PersonalizedTrainingEngine.js:45] exerciseEngine: exerciseStatus,
+[src\core\exercise\PersonalizedTrainingEngine.js:49] availableStages: this.exerciseEngine.getStages().length
+[src\core\exercise\PersonalizedTrainingEngine.js:106] const stages = this.exerciseEngine.getStages()
+[src\core\exercise\PersonalizedTrainingEngine.js:158] exerciseResult = this.exerciseEngine.getExercises(
+[src\core\progress\ProgressEvaluator.js:5] class ProgressEvaluator {
+[src\core\progress\ProgressEvaluator.js:111] module.exports = { ProgressEvaluator }
+[src\core\progress\ProgressStore.js:19] class ProgressStore {
+[src\core\progress\ProgressStore.js:175] recordAttempt(sessionId, input = {}) {
+[src\core\progress\ProgressStore.js:264] recordStageCompletion(sessionId, input = {}) {
+[src\core\progress\ProgressStore.js:501] specialistConfirmedCorrect: attempts.filter(
+[src\core\progress\ProgressStore.js:504] specialistConfirmedIncorrect: attempts.filter(
+[src\core\progress\ProgressStore.js:558] throw new Error('Сначала вызовите ProgressStore.load().')
+[src\core\progress\ProgressStore.js:563] module.exports = { ProgressStore }
+[src\core\SayloRuntime.js:17] ProgressStore
+[src\core\SayloRuntime.js:18] } = require('./progress/ProgressStore')
+[src\core\SayloRuntime.js:21] ProgressEvaluator
+[src\core\SayloRuntime.js:22] } = require('./progress/ProgressEvaluator')
+[src\core\SayloRuntime.js:25] SessionController
+[src\core\SayloRuntime.js:26] } = require('./session/SessionController')
+[src\core\SayloRuntime.js:33] class SayloRuntime {
+[src\core\SayloRuntime.js:46] this.exerciseEngine = this.trainingEngine.exerciseEngine
+[src\core\SayloRuntime.js:54] this.progressStore = new ProgressStore(projectRoot)
+[src\core\SayloRuntime.js:56] this.progressEvaluator = new ProgressEvaluator()
+[src\core\SayloRuntime.js:58] this.sessionController = new SessionController(
+[src\core\SayloRuntime.js:61] exerciseEngine: this.exerciseEngine,
+[src\core\SayloRuntime.js:62] progressStore: this.progressStore,
+[src\core\SayloRuntime.js:63] progressEvaluator: this.progressEvaluator
+[src\core\SayloRuntime.js:89] const sessionStatus = this.sessionController.load()
+[src\core\SayloRuntime.js:102] sharedExerciseEngine: true,
+[src\core\SayloRuntime.js:105] sharedProgressStore: true,
+[src\core\SayloRuntime.js:125] stages: this.exerciseEngine.getStages().length,
+[src\core\SayloRuntime.js:278] return this.exerciseEngine.getAlphabet()
+[src\core\SayloRuntime.js:284] return this.exerciseEngine.getAlphabetSummary()
+[src\core\SayloRuntime.js:313] startLesson(options = {}) {
+[src\core\SayloRuntime.js:354] const result = this.sessionController.startLesson({
+[src\core\SayloRuntime.js:372] return this.sessionController.getCurrentExercises()
+[src\core\SayloRuntime.js:375] recordAttempt(input = {}) {
+[src\core\SayloRuntime.js:378] return this.sessionController.recordAttempt(input)
+[src\core\SayloRuntime.js:381] recordStageCompletion(input = {}) {
+[src\core\SayloRuntime.js:384] return this.sessionController.recordStageCompletion(input)
+[src\core\SayloRuntime.js:387] getCurrentProgress() {
+[src\core\SayloRuntime.js:390] return this.sessionController.getCurrentProgress()
+[src\core\SayloRuntime.js:396] return this.sessionController.getStageEvaluation()
+[src\core\SayloRuntime.js:399] finishLesson() {
+[src\core\SayloRuntime.js:402] return this.sessionController.finishLesson()
+[src\core\SayloRuntime.js:412] const attempts = this.progressStore.listAttempts()
+[src\core\SayloRuntime.js:444] 'Сначала вызовите SayloRuntime.initialize().'
+[src\core\SayloRuntime.js:451] SayloRuntime
+[src\core\session\SessionController.js:2] const { ExerciseEngine } = require('../exercise/ExerciseEngine.js')
+[src\core\session\SessionController.js:3] const { ProgressStore } = require('../progress/ProgressStore.js')
+[src\core\session\SessionController.js:4] const { ProgressEvaluator } = require('../progress/ProgressEvaluator.js')
+[src\core\session\SessionController.js:6] class SessionController {
+[src\core\session\SessionController.js:10] // Используем общие экземпляры из SayloRuntime,
+[src\core\session\SessionController.js:12] this.exerciseEngine = options.exerciseEngine ||
+[src\core\session\SessionController.js:13] new ExerciseEngine(projectRoot)
+[src\core\session\SessionController.js:15] this.progressStore = options.progressStore ||
+[src\core\session\SessionController.js:16] new ProgressStore(projectRoot)
+[src\core\session\SessionController.js:18] this.progressEvaluator = options.progressEvaluator ||
+[src\core\session\SessionController.js:19] new ProgressEvaluator()
+[src\core\session\SessionController.js:37] // ExerciseEngine.load() теперь идемпотентен:
+[src\core\session\SessionController.js:39] const engineStatus = this.exerciseEngine.load()
+[src\core\session\SessionController.js:40] const progressStatus = this.progressStore.load()
+[src\core\session\SessionController.js:46] exerciseEngine: engineStatus,
+[src\core\session\SessionController.js:47] progressStore: progressStatus
+[src\core\session\SessionController.js:55] startLesson(options = {}) {
+[src\core\session\SessionController.js:81] const stage = this.exerciseEngine.getStage(options.stageId)
+[src\core\session\SessionController.js:89] const session = this.progressStore.createSession({
+[src\core\session\SessionController.js:112] return this.exerciseEngine.getExercises(
+[src\core\session\SessionController.js:122] recordAttempt(input = {}) {
+[src\core\session\SessionController.js:137] return this.progressStore.recordAttempt(
+[src\core\session\SessionController.js:147] recordStageCompletion(input = {}) {
+[src\core\session\SessionController.js:156] return this.progressStore.recordStageCompletion(
+[src\core\session\SessionController.js:165] return this.progressStore.listStageCompletions({
+[src\core\session\SessionController.js:174] getCurrentProgress() {
+[src\core\session\SessionController.js:177] return this.progressStore.getSoundProgress(
+[src\core\session\SessionController.js:188] const attempts = this.progressStore.listAttempts({
+[src\core\session\SessionController.js:194] return this.progressEvaluator.evaluate(
+[src\core\session\SessionController.js:204] finishLesson() {
+[src\core\session\SessionController.js:207] const finishedSession = this.progressStore.finishSession(
+[src\core\session\SessionController.js:224] return this.progressStore.getSoundProgress(
+[src\core\session\SessionController.js:239] 'Сначала вызовите SessionController.load().'
+[src\core\session\SessionController.js:244] this.exerciseEngine.ensureLoaded()
+[src\core\session\SessionController.js:245] this.progressStore.ensureLoaded()
+[src\core\session\SessionController.js:257] module.exports = { SessionController }
+[src\renderer\app.js:75] startLessonButton: document.getElementById('startLessonButton'),
+[src\renderer\app.js:378] function startLesson() {
+[src\renderer\app.js:1122] elements.startLessonButton.addEventListener('click', startLesson)
+[src\renderer\game\systems\GameFlowSystem.js:9] export class GameFlowSystem {
+[src\renderer\game\systems\GameFlowSystem.js:18] 'GameFlowSystem: eventBus должен поддерживать emit().'
+[src\renderer\game\systems\GameFlowSystem.js:382] recordAttempt(result = {}) {
+[src\renderer\game\systems\GameFlowSystem.js:912] `[Saylo GameFlowSystem] Ошибка события ${eventName}:`,
+[src\renderer\game\systems\GameFlowSystem.js:926] 'GameFlowSystem уже уничтожен.'
+[tests\progressEvaluator.test.js:2] const { ProgressEvaluator } = require('../src/core/progress/ProgressEvaluator.js')
+[tests\progressEvaluator.test.js:4] const evaluator = new ProgressEvaluator()
+[tests\progressStore.test.js:6] const { ProgressStore } = require('../src/core/progress/ProgressStore.js')
+[tests\progressStore.test.js:15] const store = new ProgressStore(tempRoot)
+[tests\progressStore.test.js:29] const attempt = store.recordAttempt(session.id, {
+[tests\progressStore.test.js:44] store.recordAttempt(session.id, {
+[tests\progressStore.test.js:58] store.recordAttempt(session.id, {
+[tests\progressStore.test.js:71] const specialistAttempt = store.recordAttempt(session.id, {
+[tests\progressStore.test.js:92] assert.equal(progress.specialistConfirmedCorrect, 1)
+[tests\progressStore.test.js:99] const restoredStore = new ProgressStore(tempRoot)
+[tests\progressStoreV2.test.js:6] const { ProgressStore } = require('../src/core/progress/ProgressStore.js')
+[tests\progressStoreV2.test.js:17] const freshStore = new ProgressStore(freshRoot)
+[tests\progressStoreV2.test.js:28] const reloadStore = new ProgressStore(freshRoot)
+[tests\progressStoreV2.test.js:75] const migratedStore = new ProgressStore(oldRoot)
+[tests\progressStoreV2.test.js:87] const finalStore = new ProgressStore(oldRoot)
+[tests\progressTaskResult.test.js:6] const { ProgressStore } = require('../src/core/progress/ProgressStore.js')
+[tests\progressTaskResult.test.js:13] const store = new ProgressStore(tempRoot)
+[tests\progressTaskResult.test.js:21] store.recordAttempt(session.id, {
+[tests\progressTaskResult.test.js:32] store.recordAttempt(session.id, {
+[tests\progressTaskResult.test.js:42] const reloadedStore = new ProgressStore(tempRoot)
+[tests\russianAlphabetEngine.test.js:5] const { ExerciseEngine } = require('../src/core/exercise/ExerciseEngine.js')
+[tests\russianAlphabetEngine.test.js:10] const engine = new ExerciseEngine(projectRoot)
+[tests\sessionProgressEvaluation.test.js:6] const { SessionController } = require(
+[tests\sessionProgressEvaluation.test.js:7] '../src/core/session/SessionController.js'
+[tests\sessionProgressEvaluation.test.js:31] const controller = new SessionController(tempRoot)
+[tests\sessionProgressEvaluation.test.js:37] controller.startLesson({
+[tests\sessionProgressEvaluation.test.js:45] controller.recordAttempt({
+[tests\sessionProgressEvaluation.test.js:56] controller.finishLesson()
+[tests\sessionProgressEvaluation.test.js:59] const restoredController = new SessionController(tempRoot)
+[tests\sessionProgressEvaluation.test.js:62] restoredController.startLesson({
+[tests\sessionProgressEvaluation.test.js:75] restoredController.finishLesson()
+[tests\sessionProgressEvaluation.test.js:77] restoredController.startLesson({
+[tests\sessionProgressEvaluation.test.js:82] restoredController.recordAttempt({
+[tests\sessionStageIntegration.test.js:6] const { SessionController } = require('../src/core/session/SessionController.js')
+[tests\sessionStageIntegration.test.js:26] const controller = new SessionController(tempDir)
+[tests\sessionStageIntegration.test.js:29] const lesson = controller.startLesson({
+[tests\sessionStageIntegration.test.js:39] const completion = controller.recordStageCompletion({
+[tests\sessionStageIntegration.test.js:64] controller.recordStageCompletion({
+[tests\sessionStageIntegration.test.js:78] controller.finishLesson()
+[tests\sessionStageIntegration.test.js:86] controller.recordStageCompletion({
+[tests\stageCompletion.test.js:6] const { ProgressStore } = require('../src/core/progress/ProgressStore.js')
+[tests\stageCompletion.test.js:15] const store = new ProgressStore(tempRoot)
+[tests\stageCompletion.test.js:27] const automatic = store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:44] const parent = store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:59] store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:72] store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:85] store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:96] const confirmed = store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:113] const reopened = store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:127] store.recordStageCompletion(session.id, {
+[tests\stageCompletion.test.js:151] const restoredStore = new ProgressStore(tempRoot)
+[tests\stageCompletion.test.js:170] restoredStore.recordStageCompletion(session.id, {
+Всего совпадений: 177
+
+==============================================================================
+8. AUDIO / SPEECH CONNECTIONS
+==============================================================================
+[electron\main.js:82] 'saylo:get-phoneme-data': 'getPhonemeData',
+[electron\main.js:90] 'saylo:record-attempt': 'recordAttempt',
+[electron\preload\preload.js:57] getPhonemeData: () =>
+[electron\preload\preload.js:58] ipcRenderer.invoke('saylo:get-phoneme-data'),
+[electron\preload\preload.js:85] recordAttempt: (data) =>
+[src\audio\audioRecorder.js:7] export class AudioRecorder {
+[src\audio\audioRecorder.js:10] this.mediaRecorder = null
+[src\audio\audioRecorder.js:22] this.stream = await navigator.mediaDevices.getUserMedia({
+[src\audio\audioRecorder.js:32] this.mediaRecorder = new MediaRecorder(this.stream)
+[src\audio\audioRecorder.js:34] this.mediaRecorder.ondataavailable = (event) => {
+[src\audio\audioRecorder.js:40] this.mediaRecorder.start()
+[src\audio\audioRecorder.js:53] if (!this.mediaRecorder || !this.isRecording) {
+[src\audio\audioRecorder.js:58] this.mediaRecorder.onstop = () => {
+[src\audio\audioRecorder.js:60] type: this.mediaRecorder.mimeType
+[src\audio\audioRecorder.js:67] this.mediaRecorder.onerror = (event) => {
+[src\audio\audioRecorder.js:72] this.mediaRecorder.stop()
+[src\audio\audioRecorder.js:84] this.mediaRecorder = null
+[src\core\exercise\ArticulationTrainingPlanner.js:100] const nucleusIndex = (syllable.phonemeTypes || [])
+[src\core\exercise\ArticulationTrainingPlanner.js:153] unit.underlyingPhoneme !== unit.surfacePhoneme
+[src\core\exercise\ArticulationTrainingPlanner.js:156] phonemeIndex: unit.index,
+[src\core\exercise\ArticulationTrainingPlanner.js:169] phoneme: previous.surfacePhoneme,
+[src\core\exercise\ArticulationTrainingPlanner.js:174] phoneme: next.surfacePhoneme,
+[src\core\phonetics\GraphemePhonemeResolver.js:1] class GraphemePhonemeResolver {
+[src\core\phonetics\GraphemePhonemeResolver.js:28] const addPhoneme = (segment, soundId) => {
+[src\core\phonetics\GraphemePhonemeResolver.js:29] const phoneme = this.loader.getPhoneme(soundId)
+[src\core\phonetics\GraphemePhonemeResolver.js:31] if (!phoneme) {
+[src\core\phonetics\GraphemePhonemeResolver.js:36] segment.phonemes.push(phoneme.phoneme)
+[src\core\phonetics\GraphemePhonemeResolver.js:51] const current = this.loader.getPhoneme(currentId)
+[src\core\phonetics\GraphemePhonemeResolver.js:57] const paired = this.loader.getPhoneme(current.hardnessPair)
+[src\core\phonetics\GraphemePhonemeResolver.js:64] previous.phonemes = [paired.phoneme]
+[src\core\phonetics\GraphemePhonemeResolver.js:86] phonemes: [],
+[src\core\phonetics\GraphemePhonemeResolver.js:121] const vowelId = grapheme.phonemeIds.find(
+[src\core\phonetics\GraphemePhonemeResolver.js:122] id => this.loader.getPhoneme(id)?.type === 'vowel'
+[src\core\phonetics\GraphemePhonemeResolver.js:125] const yId = grapheme.phonemeIds.find(
+[src\core\phonetics\GraphemePhonemeResolver.js:134] addPhoneme(segment, yId)
+[src\core\phonetics\GraphemePhonemeResolver.js:135] addPhoneme(segment, vowelId)
+[src\core\phonetics\GraphemePhonemeResolver.js:138] addPhoneme(segment, vowelId)
+[src\core\phonetics\GraphemePhonemeResolver.js:154] const selected = grapheme.phonemeIds
+[src\core\phonetics\GraphemePhonemeResolver.js:155] .map(id => this.loader.getPhoneme(id))
+[src\core\phonetics\GraphemePhonemeResolver.js:167] addPhoneme(segment, selected.soundId)
+[src\core\phonetics\GraphemePhonemeResolver.js:179] const soundId = grapheme.phonemeIds[0]
+[src\core\phonetics\GraphemePhonemeResolver.js:185] addPhoneme(segment, soundId)
+[src\core\phonetics\GraphemePhonemeResolver.js:194] const phonemeSequence = segments.flatMap(segment =>
+[src\core\phonetics\GraphemePhonemeResolver.js:199] segment.phonemes
+[src\core\phonetics\GraphemePhonemeResolver.js:207] phonemeSequence,
+[src\core\phonetics\GraphemePhonemeResolver.js:219] module.exports = { GraphemePhonemeResolver }
+[src\core\phonetics\MorphemeBoundaryEngine.js:52] phonemeSegments: matchedSegments.map(segment => ({
+[src\core\phonetics\MorphemeBoundaryEngine.js:55] phonemes: segment.phonemes || []
+[src\core\phonetics\PhonemePositionAnalyzer.js:1] class PhonemePositionAnalyzer {
+[src\core\phonetics\PhonemePositionAnalyzer.js:46] phonemeIndex: i,
+[src\core\phonetics\PhonemePositionAnalyzer.js:52] phoneme: unit.underlyingPhoneme
+[src\core\phonetics\PhonemePositionAnalyzer.js:56] phoneme: unit.surfacePhoneme
+[src\core\phonetics\PhonemePositionAnalyzer.js:60] unit.underlyingPhoneme !== unit.surfacePhoneme,
+[src\core\phonetics\PhonemePositionAnalyzer.js:65] phoneme: previous.surfacePhoneme,
+[src\core\phonetics\PhonemePositionAnalyzer.js:70] phoneme: next.surfacePhoneme,
+[src\core\phonetics\PhonemePositionAnalyzer.js:110] module.exports = { PhonemePositionAnalyzer }
+[src\core\phonetics\PhoneticContextAnalyzer.js:6] getPhonemeData(soundId) {
+[src\core\phonetics\PhoneticContextAnalyzer.js:10] return this.loader.getPhoneme(soundId)
+[src\core\phonetics\PhoneticContextAnalyzer.js:17] const data = this.getPhonemeData(unit?.surfaceSoundId)
+[src\core\phonetics\PhoneticContextAnalyzer.js:21] phoneme: unit?.surfacePhoneme || null,
+[src\core\phonetics\PhoneticContextAnalyzer.js:45] const vowelPosition = syllable.phonemes?.findIndex(
+[src\core\phonetics\PhoneticContextAnalyzer.js:46] (_, i) => syllable.phonemes[i] === syllable.nucleus?.phoneme
+[src\core\phonetics\PhoneticContextAnalyzer.js:103] phonemeIndex: i,
+[src\core\phonetics\PhoneticContextAnalyzer.js:141] unit.underlyingPhoneme !== unit.surfacePhoneme
+[src\core\phonetics\PhoneticDataLoader.js:29] this.mapping = readJson('russianGraphemePhonemeMap.json')
+[src\core\phonetics\PhoneticDataLoader.js:36] phonemes: this.sounds.phonemes.length,
+[src\core\phonetics\PhoneticDataLoader.js:49] if (!Array.isArray(this.sounds?.phonemes)) {
+[src\core\phonetics\PhoneticDataLoader.js:67] this.sounds.phonemes.map(item => item.soundId)
+[src\core\phonetics\PhoneticDataLoader.js:70] if (soundIds.size !== this.sounds.phonemes.length) {
+[src\core\phonetics\PhoneticDataLoader.js:75] for (const soundId of grapheme.phonemeIds || []) {
+[src\core\phonetics\PhoneticDataLoader.js:87] getPhoneme(soundId) {
+[src\core\phonetics\PhoneticDataLoader.js:90] return this.sounds.phonemes.find(
+[src\core\phonetics\PhonologicalProcessEngine.js:20] throw new Error('Не передан результат GraphemePhonemeResolver.')
+[src\core\phonetics\PhonologicalProcessEngine.js:72] const phoneme = this.loader.getPhoneme(unit.currentSoundId)
+[src\core\phonetics\PhonologicalProcessEngine.js:81] underlyingPhoneme: unit.originalPhoneme,
+[src\core\phonetics\PhonologicalProcessEngine.js:84] surfacePhoneme: unit.surfaceSymbol || phoneme?.phoneme || null,
+[src\core\phonetics\PhonologicalProcessEngine.js:115] phonemeSequence: [...resolution.phonemeSequence],
+[src\core\phonetics\PhonologicalProcessEngine.js:120] item => item.surfacePhoneme
+[src\core\phonetics\PhonologicalProcessEngine.js:124] .map(item => item.surfacePhoneme)
+[src\core\phonetics\PhonologicalProcessEngine.js:139] const phoneme = this.loader.getPhoneme(soundId)
+[src\core\phonetics\PhonologicalProcessEngine.js:141] if (!phoneme) {
+[src\core\phonetics\PhonologicalProcessEngine.js:149] type: phoneme.type,
+[src\core\phonetics\PhonologicalProcessEngine.js:154] originalPhoneme: phoneme.phoneme,
+[src\core\phonetics\PhonologicalProcessEngine.js:166] getPhoneme(unit) {
+[src\core\phonetics\PhonologicalProcessEngine.js:167] return this.loader.getPhoneme(unit.currentSoundId)
+[src\core\phonetics\PhonologicalProcessEngine.js:175] const phoneme = this.getPhoneme(unit)
+[src\core\phonetics\PhonologicalProcessEngine.js:178] phoneme &&
+[src\core\phonetics\PhonologicalProcessEngine.js:179] this.obstruentManners.has(phoneme.manner)
+[src\core\phonetics\PhonologicalProcessEngine.js:184] const current = this.getPhoneme(unit)
+[src\core\phonetics\PhonologicalProcessEngine.js:190] return this.loader.sounds.phonemes.find(item =>
+[src\core\phonetics\PhonologicalProcessEngine.js:216] const phoneme = this.getPhoneme(last)
+[src\core\phonetics\PhonologicalProcessEngine.js:218] if (phoneme.voicing !== 'voiced') {
+[src\core\phonetics\PhonologicalProcessEngine.js:241] from: phoneme.phoneme,
+[src\core\phonetics\PhonologicalProcessEngine.js:242] to: replacement.phoneme
+[src\core\phonetics\PhonologicalProcessEngine.js:264] const currentPhoneme = this.getPhoneme(current)
+[src\core\phonetics\PhonologicalProcessEngine.js:265] const nextPhoneme = this.getPhoneme(next)
+[src\core\phonetics\PhonologicalProcessEngine.js:268] !currentPhoneme?.voicing ||
+[src\core\phonetics\PhonologicalProcessEngine.js:269] !nextPhoneme?.voicing ||
+[src\core\phonetics\PhonologicalProcessEngine.js:270] currentPhoneme.voicing === nextPhoneme.voicing
+[src\core\phonetics\PhonologicalProcessEngine.js:277] nextPhoneme.voicing
+[src\core\phonetics\PhonologicalProcessEngine.js:295] from: currentPhoneme.phoneme,
+[src\core\phonetics\PhonologicalProcessEngine.js:296] to: replacement.phoneme
+[src\core\phonetics\PhonologicalProcessEngine.js:309] return this.getPhoneme(units[i])
+[src\core\phonetics\PhonologicalProcessEngine.js:449] const phoneme = this.getPhoneme(unit)
+[src\core\phonetics\PhonologicalProcessEngine.js:462] underlying: phoneme?.phoneme || null,
+[src\core\phonetics\RussianPhoneticsEngine.js:2] const { GraphemePhonemeResolver } = require('./GraphemePhonemeResolver')
+[src\core\phonetics\RussianPhoneticsEngine.js:10] const { PhonemePositionAnalyzer } = require('./PhonemePositionAnalyzer')
+[src\core\phonetics\RussianPhoneticsEngine.js:19] this.resolver = new GraphemePhonemeResolver(this.loader)
+[src\core\phonetics\RussianPhoneticsEngine.js:32] this.positionAnalyzer = new PhonemePositionAnalyzer()
+[src\core\phonetics\RussianPhoneticsEngine.js:204] graphemePhoneme: resolution,
+[src\core\phonetics\RussianPhoneticsEngine.js:212] phonemeSequence: resolution.transcription,
+[src\core\phonetics\RussianPhoneticsEngine.js:274] getPhonemeData() {
+[src\core\phonetics\RussianPhonotacticsEngine.js:31] normalize(phoneme) {
+[src\core\phonetics\RussianPhonotacticsEngine.js:32] return String(phoneme || '')
+[src\core\phonetics\RussianPhonotacticsEngine.js:39] getSonority(phoneme) {
+[src\core\phonetics\RussianPhonotacticsEngine.js:40] const symbol = this.normalize(phoneme)
+[src\core\phonetics\RussianPhonotacticsEngine.js:57] getClusterSymbols(phonemes) {
+[src\core\phonetics\RussianPhonotacticsEngine.js:58] return (phonemes || []).map(
+[src\core\phonetics\RussianPhonotacticsEngine.js:63] analyzeOnset(phonemes) {
+[src\core\phonetics\RussianPhonotacticsEngine.js:64] const cluster = this.getClusterSymbols(phonemes)
+[src\core\phonetics\RussianPhonotacticsEngine.js:98] phoneme => this.getSonority(phoneme)
+[src\core\phonetics\RussianPhonotacticsEngine.js:123] analyzeCoda(phonemes) {
+[src\core\phonetics\RussianPhonotacticsEngine.js:124] const cluster = this.getClusterSymbols(phonemes)
+[src\core\phonetics\RussianPhonotacticsEngine.js:146] phoneme => this.getSonority(phoneme)
+[src\core\phonetics\RussianPhonotacticsEngine.js:189] syllable.onset?.phonemes || []
+[src\core\phonetics\RussianPhonotacticsEngine.js:193] syllable.coda?.phonemes || []
+[src\core\phonetics\SyllablePatternEngine.js:11] const types = Array.isArray(syllable.phonemeTypes)
+[src\core\phonetics\SyllablePatternEngine.js:12] ? syllable.phonemeTypes
+[src\core\phonetics\SyllablePatternEngine.js:49] phonemes: syllable.onset || [],
+[src\core\phonetics\SyllablePatternEngine.js:54] phoneme: syllable.nucleus.phoneme,
+[src\core\phonetics\SyllablePatternEngine.js:60] phonemes: syllable.coda || [],
+[src\core\phonetics\SyllableStructureEngine.js:15] surfacePhoneme:
+[src\core\phonetics\SyllableStructureEngine.js:16] unit.surfacePhoneme || unit.underlyingPhoneme || '',
+[src\core\phonetics\SyllableStructureEngine.js:24] for (const phoneme of segment.phonemes || []) {
+[src\core\phonetics\SyllableStructureEngine.js:30] surfacePhoneme: phoneme,
+[src\core\phonetics\SyllableStructureEngine.js:31] underlyingPhoneme: phoneme
+[src\core\phonetics\SyllableStructureEngine.js:41] unit.surfacePhoneme || unit.underlyingPhoneme || ''
+[src\core\phonetics\SyllableStructureEngine.js:63] unit.surfacePhoneme || unit.underlyingPhoneme || ''
+[src\core\phonetics\SyllableStructureEngine.js:181] phonemes: syllableUnits.map(
+[src\core\phonetics\SyllableStructureEngine.js:182] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:218] phonemes: syllableUnits.map(
+[src\core\phonetics\SyllableStructureEngine.js:219] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:222] phonemeTypes: syllableUnits.map(
+[src\core\phonetics\SyllableStructureEngine.js:227] unit => unit.surfacePhoneme
+[src\core\phonetics\SyllableStructureEngine.js:232] phoneme: vowel.surfacePhoneme,
+[src\core\phonetics\SyllableStructureEngine.js:233] underlyingPhoneme: vowel.underlyingPhoneme || null,
+[src\core\phonetics\SyllableStructureEngine.js:239] unit => unit.surfacePhoneme
+[src\core\progress\ProgressStore.js:175] recordAttempt(sessionId, input = {}) {
+[src\core\SayloRuntime.js:269] getPhonemeData() {
+[src\core\SayloRuntime.js:272] return this.trainingEngine.phoneticsEngine.getPhonemeData()
+[src\core\SayloRuntime.js:375] recordAttempt(input = {}) {
+[src\core\SayloRuntime.js:378] return this.sessionController.recordAttempt(input)
+[src\core\session\SessionController.js:122] recordAttempt(input = {}) {
+[src\core\session\SessionController.js:137] return this.progressStore.recordAttempt(
+[src\renderer\app.js:1] import { AudioRecorder } from '../audio/audioRecorder.js'
+[src\renderer\app.js:11] // Whisper используется для распознавания слов,
+[src\renderer\app.js:15] const recorder = new AudioRecorder()
+[src\renderer\app.js:106] transcribeButton: document.getElementById('transcribeButton'),
+[src\renderer\app.js:166] await loadPhonemeDictionary()
+[src\renderer\app.js:608] elements.transcribeButton.disabled = false
+[src\renderer\app.js:651] async function transcribeAudio() {
+[src\renderer\app.js:657] elements.transcribeButton.disabled = true
+[src\renderer\app.js:670] 'http://127.0.0.1:8765/transcribe',
+[src\renderer\app.js:695] console.error('Ошибка Whisper:', error)
+[src\renderer\app.js:698] 'Не удалось выполнить распознавание. Проверь, запущен ли Whisper на 127.0.0.1:8765.'
+[src\renderer\app.js:700] elements.transcribeButton.disabled = !currentRecording
+[src\renderer\app.js:716] const audioContext = new AudioContext()
+[src\renderer\app.js:718] const audioBuffer = await audioContext.decodeAudioData(
+[src\renderer\app.js:722] const wavBlob = encodeWav(audioBuffer)
+[src\renderer\app.js:736] await audioContext.close()
+[src\renderer\app.js:746] function encodeWav(audioBuffer) {
+[src\renderer\app.js:747] const channels = audioBuffer.numberOfChannels
+[src\renderer\app.js:748] const sampleRate = audioBuffer.sampleRate
+[src\renderer\app.js:749] const samples = audioBuffer.length
+[src\renderer\app.js:781] channelData.push(audioBuffer.getChannelData(channel))
+[src\renderer\app.js:816] let phonemeEntries = []
+[src\renderer\app.js:836] function getPhonemeEntries(data) {
+[src\renderer\app.js:838] if (Array.isArray(data?.phonemes)) return data.phonemes
+[src\renderer\app.js:839] if (Array.isArray(data?.sounds?.phonemes)) return data.sounds.phonemes
+[src\renderer\app.js:840] if (Array.isArray(data?.data?.phonemes)) return data.data.phonemes
+[src\renderer\app.js:844] function renderPhonemeOptions() {
+[src\renderer\app.js:845] const select = document.getElementById('targetPhonemeSelect')
+[src\renderer\app.js:861] const entries = phonemeEntries.filter(item => item.type === group.type)
+[src\renderer\app.js:867] for (const phoneme of entries) {
+[src\renderer\app.js:868] if (!phoneme.soundId) continue
+[src\renderer\app.js:871] option.value = phoneme.soundId
+[src\renderer\app.js:873] const symbol = phoneme.phoneme || phoneme.symbol || phoneme.soundId
+[src\renderer\app.js:874] const description = phoneme.description
+[src\renderer\app.js:875] ? ` — ${phoneme.description}`
+[src\renderer\app.js:885] if (!phonemeEntries.length) {
+[src\renderer\app.js:890] async function loadPhonemeDictionary() {
+[src\renderer\app.js:891] if (!window.saylo?.getPhonemeData) {
+[src\renderer\app.js:895] const data = await window.saylo.getPhonemeData()
+[src\renderer\app.js:896] phonemeEntries = getPhonemeEntries(data)
+[src\renderer\app.js:897] renderPhonemeOptions()
+[src\renderer\app.js:899] if (!phonemeEntries.length) {
+[src\renderer\app.js:921] const phoneme = phonemeEntries.find(item => item.soundId === sound.soundId)
+[src\renderer\app.js:922] const symbol = phoneme?.phoneme || sound.soundId
+[src\renderer\app.js:1073] const soundSelect = document.getElementById('targetPhonemeSelect')
+[src\renderer\app.js:1154] elements.transcribeButton.addEventListener(
+[src\renderer\app.js:1156] transcribeAudio
+[src\renderer\game\systems\AudioSystem.js:10] export class AudioSystem {
+[src\renderer\game\systems\AudioSystem.js:32] '[AudioSystem] Некорректный EventBus.'
+[src\renderer\game\systems\AudioSystem.js:44] '[AudioSystem] channelVolumes должен быть объектом.'
+[src\renderer\game\systems\AudioSystem.js:50] '[AudioSystem] muted должен быть boolean.'
+[src\renderer\game\systems\AudioSystem.js:79] '[AudioSystem] audioFactory должен быть функцией.'
+[src\renderer\game\systems\AudioSystem.js:111] '[AudioSystem] Требуется корректный путь к аудиофайлу.'
+[src\renderer\game\systems\AudioSystem.js:119] `[AudioSystem] Звук ${id} уже зарегистрирован.`
+[src\renderer\game\systems\AudioSystem.js:135] '[AudioSystem] loop должен быть boolean.'
+[src\renderer\game\systems\AudioSystem.js:150] '[AudioSystem] preload должен быть boolean.'
+[src\renderer\game\systems\AudioSystem.js:279] `[AudioSystem] Звук ${soundId} не зарегистрирован.`
+[src\renderer\game\systems\AudioSystem.js:299] '[AudioSystem] playbackRate должен быть от 0 до 4.'
+[src\renderer\game\systems\AudioSystem.js:307] '[AudioSystem] loop должен быть boolean.'
+[src\renderer\game\systems\AudioSystem.js:399] `[AudioSystem] Звук ${soundId} не зарегистрирован.`
+[src\renderer\game\systems\AudioSystem.js:405] `[AudioSystem] Звук ${soundId} принадлежит каналу ${sound.channel}.`
+[src\renderer\game\systems\AudioSystem.js:708] '[AudioSystem] muted должен быть boolean.'
+[src\renderer\game\systems\AudioSystem.js:931] '[AudioSystem] ID должен быть непустой строкой.'
+[src\renderer\game\systems\AudioSystem.js:944] `[AudioSystem] ${name} должен быть от 0 до 1.`
+[src\renderer\game\systems\AudioSystem.js:951] if (!AudioSystem.CHANNELS.includes(channel)) {
+[src\renderer\game\systems\AudioSystem.js:953] `[AudioSystem] Неизвестный канал: ${channel}.`
+[src\renderer\game\systems\AudioSystem.js:966] '[AudioSystem] Параметры должны быть объектом.'
+[src\renderer\game\systems\AudioSystem.js:975] '[AudioSystem] Система уничтожена.'
+[src\renderer\game\systems\GameFlowSystem.js:382] recordAttempt(result = {}) {
+[tests\graphemePhonemeResolver.test.js:5] const { GraphemePhonemeResolver } = require('../src/core/phonetics/GraphemePhonemeResolver.js')
+[tests\graphemePhonemeResolver.test.js:10] const resolver = new GraphemePhonemeResolver(loader)
+[tests\graphemePhonemeResolver.test.js:122] result.phonemeSequence,
+[tests\phonetics-diagnostic.js:30] result.graphemePhoneme.transcription.join(' '));
+[tests\progressStore.test.js:29] const attempt = store.recordAttempt(session.id, {
+[tests\progressStore.test.js:44] store.recordAttempt(session.id, {
+[tests\progressStore.test.js:58] store.recordAttempt(session.id, {
+[tests\progressStore.test.js:71] const specialistAttempt = store.recordAttempt(session.id, {
+[tests\progressTaskResult.test.js:21] store.recordAttempt(session.id, {
+[tests\progressTaskResult.test.js:32] store.recordAttempt(session.id, {
+[tests\runGraphemePhonemeCases.js:5] const { GraphemePhonemeResolver } = require('../src/core/phonetics/GraphemePhonemeResolver.js')
+[tests\runGraphemePhonemeCases.js:7] const casesPath = path.join(__dirname, 'data', 'russianGraphemePhonemeCases.json')
+[tests\runGraphemePhonemeCases.js:16] const resolver = new GraphemePhonemeResolver(loader)
+[tests\runGraphemePhonemeCases.js:26] console.log('Ожидалось:', item.expectedPhonemes.join(' '))
+[tests\sessionProgressEvaluation.test.js:45] controller.recordAttempt({
+[tests\sessionProgressEvaluation.test.js:82] restoredController.recordAttempt({
+Всего совпадений: 239
+
+==============================================================================
+9. POSSIBLE EMPTY / STUB MODULES
+==============================================================================
+
+--- src\renderer\game\adapters\AudioAdapter.js ---
+Размер: 487 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: adapters\AudioAdapter.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\adapters\LessonAdapter.js ---
+Размер: 488 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: adapters\LessonAdapter.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\adapters\ProfileAdapter.js ---
+Размер: 489 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: adapters\ProfileAdapter.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\scenes\GardenScene.js ---
+Размер: 484 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: scenes\GardenScene.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\scenes\HomeScene.js ---
+Размер: 482 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: scenes\HomeScene.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\scenes\LessonScene.js ---
+Размер: 484 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: scenes\LessonScene.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\scenes\LibraryScene.js ---
+Размер: 485 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: scenes\LibraryScene.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+--- src\renderer\game\scenes\SceneManager.js ---
+Размер: 485 байт
+Содержимое:
+// SAYLO GAME ENGINE // Module: scenes\SceneManager.js // // Модуль игрового движка Saylo. Реализация будет добавлена после проектирования архитектуры. // // ВНИМАНИЕ: // Это архитектурная заготовка. // Не подключать модуль к работающему приложению до реализации // и проверки его интерфейса.  export {};
+
+==============================================================================
+10. PACKAGE SCRIPTS
+==============================================================================
+start = npm run build:game && electron .
+build:game = esbuild src/renderer/game/core/GameEngine.js --bundle --format=esm --platform=browser --target=es2022 --outfile=src/renderer/game/game.bundle.js
+
+==============================================================================
+11. TEST FILES
+==============================================================================
+tests\data\russianGraphemePhonemeCases.json
+tests\graphemePhonemeResolver.test.js
+tests\phonetics-diagnostic.js
+tests\progressEvaluator.test.js
+tests\progressStore.test.js
+tests\progressStoreV2.test.js
+tests\progressTaskResult.test.js
+tests\runGraphemePhonemeCases.js
+tests\russianAlphabetEngine.test.js
+tests\sessionProgressEvaluation.test.js
+tests\sessionStageIntegration.test.js
+tests\stageCompletion.test.js
+
+==============================================================================
+AUDIT FINISHED
+Файлов проверено: 99
+JS/TS файлов: 90
+Исходники не изменялись.
+Отчёт: C:\Users\user\AppData\Local\Temp\SAYLO-INTEGRATION-GRAPH-20261127-062947.txt
